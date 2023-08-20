@@ -1,10 +1,10 @@
-# Buttons
-In this section, you'll learn how to use the button component.
+# Botões
+Nessa seção, você vai aprender como usar o componente botão.
 
-## Content
-[**Functions Used**](#functions-used) > [**Button Style**](#button-style) > [**Button Type**](#button-type) > [**$addButton[]**](#addbutton) > [**$editButton[]**](#editbutton) > [**$removeButtons**](#removebuttons) > [**$removeButtons[]**](#removebuttons-1) > [**$removeComponent[]**](#removecomponent) > [**Create Interaction**](#create-interaction)
+## Conteúdo
+[**Funções Usadas**](#funções-usadas) > [**Estilo de Botão**](#estilo-de-botão) > [**Tipo de Botão**](tipo-de-botão) > [**$addButton[]**](#addbutton) > [**$editButton[]**](#editbutton) > [**$removeButtons**](#removebuttons) > [**$removeButtons[]**](#removebuttons-1) > [**$removeComponent[]**](#removecomponent) > [**Criar Interação**](#create-interaction)
 
-## Functions Used
+## Funções Usadas
 - [`$addButton[]`](../../../../bdscript/addButton.md)
 - [`$editButton[]`](../../../../bdscript/editButton.md)
 - [`$removeButtons`](../../../../bdscript/removeButtons.md)
@@ -13,18 +13,19 @@ In this section, you'll learn how to use the button component.
 - [`$onInteraction`](../../../../callbacks/onInteraction.md)
 - [`$onInteraction[]`](../../../../callbacks/onInteractionComplex.md)
 
-## Button Style
-- `primary`: Blue button
-- `secondary`: Gray button
-- `success`: Green button
-- `danger`: Red button
-- `link`: Redirect button
+## Estilo de Botão
+- `primary`: Botão azul
+- `secondary`: Botão cinza
+- `success`: Botão verde
+- `danger`: Botão vermelho
+- `link`: Botão de redirecionamento
 
-![example](https://github.com/Rainb0wKey/bdfd-wiki/assets/113303649/c5f831ea-0f09-426c-8e9d-f3e4a93a3c49)
+![Screenshot_20230820-162630~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/af2d839c-cc92-40fc-ab13-c082e9795d32)
 
-> If `link` style is used, the button **won't send** any interactions!
 
-## Button Type
+> Se o estilo `link` é usado, o botão **não mandará** alguma interação!
+
+## Tipo de Botão
 There are 2 types of buttons : `interactive` and `link`.
 
 When an interactive button is pressed, it sends an interaction which can be used together with `$onInteraction[ID]`.
