@@ -77,33 +77,34 @@ $editButton[Interação ID/URL;Rótulo;Estilo;(Desabilitar?;Emoji;Mensagem ID)]
 ```
 
 ### Parâmetros
-- `Interação ID/URL` `(Tipo: String, URL || Indicação: Obrigatório)`: Depending on the button type, you either set it to an `interaction ID` which is then used in the `$onInteraction[ID]` callback or a `URL` if it's a link button.
-- `label` `(Type: String || Flag: Emptiable)`: The text visible on the button.
-- `style` `(Type: Enum || Flag: Required)`: It's used to specify the button's background color. If the button has a link/url you **have to** set this value to `link`. Check [this section](#button-style) for more details.
-- `disable?` `(Type: Bool || Flag: Vacantable)`: If set to `yes` the button can't be pressed. Defaults as `no`. _(Optional)_
-- `emoji` `(Type: Emoji || Flag: Vacantable)`: Edits an emoji inside the button. Emojis have to be either pasted as *unicode* or be in the following format `<:emoji name:emoji ID>`. _(Optional)_
-- `message ID` `(Type: Snowflake || Flag: Vacantable)`: Edits a button in a message with the provided ID. It's important to note that provided message ID author **has to** be the bot. _(Optional)_
+- `Interação ID/URL` `(Tipo: String, URL || Indicação: Obrigatório)`: Dependendo do tipo do botão, você pode setar como `Interaction ID` que é então usada na callback `$onInteraction[ID]` ou `URL` se for um botão de link
+- `Rótulo` `(Tipo: String || Indicação: Esvaziável)`: O valor de texto visível no botão.
+- `Estilo` `(Tipo: Enum || Indicação: Obrigatória)`: É usado para especificar a cor de plano de fundo do botão. Se um botão tem um link/URL, você **tem que** setar o valor como `link`. Veja [essa seção](#button-style) para mais detalhes.
+- `Desabilitar?` `(Tipo: Bool || Indicação: Vagável)`: Se setado como `yes`, O botão não pode ser pressionado. Padroniza como `no`. _(Opcional)_
+- `Emoji` `(Tipo: Emoji || Indicação: Vagável)`: Adiciona um emoji dentro do botão. Emojis devem ser colados como *unicode*, *alias* ou estar no seguinte formato: `<nome emoji:emoji ID>`. _(Opcional)_
+
+- `Mensagem ID` `(Tipo: Snowflake || Indicação: Esvaziável)`: Adiciona o botão na mensagem ID fornecida. É importante notar que o autor da mensagem ID fornecida **tem que** ser do bot. _(Opcional)_
 ## Example
-#### Trigger: `$onInteraction[test]`
+#### Trigger: `$onInteraction[teste]`
 ```
 $nomention
-$username said hello!
-$editButton[test;Say hello!;danger;yes;]
+$username disse olá!
+$editButton[teste;Dizer olá!;danger;yes;]
 ```
-![example](https://user-images.githubusercontent.com/113303649/210611967-f15b8c9b-7bd9-4218-a89b-08e93ce7eeb3.png)
+![Screenshot_20230820-185413~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/86e07b0f-d8a7-4434-9ca8-6da3e0fa4d37)
 
 
 # $removeButtons
-Removes all buttons from the triggered message.
-## Syntax
+Remove todos os botões da mensagem acionada.
+## Sintaxe
 ```
 $removeButtons
 ```
 ## Example
-#### Trigger: `$onInteraction[test]`
+#### Trigger: `$onInteraction[teste]`
 ```
 $nomention
-$username removed all buttons from this message
+$username removeu todos os botões dessa mensagem
 $removeButtons
 ```
 ![example](https://user-images.githubusercontent.com/113303649/210621352-ae7334a6-a2de-4fbe-8749-7134f9a73af3.png)
