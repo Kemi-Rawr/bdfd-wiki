@@ -23,16 +23,15 @@ Nessa seção, você vai aprender como usar o componente botão.
 ![Screenshot_20230820-162630~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/af2d839c-cc92-40fc-ab13-c082e9795d32)
 
 
-> Se o estilo `link` é usado, o botão **não mandará** alguma interação!
+> Se o estilo `link` é usado, o botão **não enviará** alguma interação!
 
 ## Tipo de Botão
-There are 2 types of buttons : `interactive` and `link`.
+Tem dois tipos de botões: `interativo` e `link`.
 
-When an interactive button is pressed, it sends an interaction which can be used together with `$onInteraction[ID]`.
+quando um botão interativo é pressionado, ele manda uma interação que pode ser usada junta com `$onInteraction[ID]`.
 
-Every interactive button has an `ID`. A `$onInteraction[ID]` callback, will only get triggered when the button with the same `ID` is pressed.
-Interactive buttons can use every `style` except `link`.
-
+Todo botão interativo tem um `ID`. Uma `$onInteraction[ID]` callback irá apenas ser acionada quando o botão com o mesmo `ID` é pressionado.
+botões interativos podem usar todo estilo exceto `link`.
 > Link buttons **don't send** any interactions. When they're pressed they forward the user to a website.
 > 
 > Link buttons **need to** set their `style` argument value to `link`.
