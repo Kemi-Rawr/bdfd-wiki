@@ -37,26 +37,26 @@ botões interativos podem usar todo estilo exceto `link`.
 > Link buttons **need to** set their `style` argument value to `link`.
 
 # $addButton
-Adds a button to the response message.
-## Syntax
+Adiciona um botão à uma mensagem
+
+## Sintaxe
 ```
-$addButton[new row?;interaction ID/url;label;style;(disable?;emoji;message ID)]
+$addButton[Nova fila?;Interação ID/URL;Rótulo;Estilo;(Desabilitar?;Emoji;Mensagem ID)]
 ```
-### Parameters
-- `new row?` `(Type: Bool || Flag: Required)`: If set to `yes` the button will appear in a new row. If it's set to `no` the button will appear in the same row as a previous button.
 
-    > A message can have a maximum of 25 buttons (5 rows of 5 buttons).
+### Parâmetros
+- `Nova fila?` `(Tipo: Bool || Indicação: Obrigatória)`: Se setado como `yes`, o botão vai aparecer em uma nova fila. Se setado como `no`, o botão vai aparecer na mesma fila que o botão anterior.
+    > Uma mensagem pode ter no máximo 25 botões (5 filas de 5 botões).
+- `Interação ID/URL` `(Tipo: String, URL || Indicação: Obrigatório)`: Dependendo do tipo do botão, você pode setar como `Interaction ID` que é então usada na callback `$onInteraction[ID]` ou `URL` se for um botão de link
+- `Rótulo` `(Tipo: String || Indicação: Esvaziável)`: O valor de texto visível no botão.
+- `Estilo` `(Tipo: Enum || Indicação: Obrigatória)`: É usado para especificar a cor de plano de fundo do botão. Se um botão tem um link/URL, você **tem que** setar o valor como `link`. Veja [essa seção](#button-style) para mais detalhes.
+- `Desabilitar?` `(Tipo: Bool || Indicação: Vagável)`: Se setado como `yes`, O botão não pode ser pressionado. Padroniza como `no`.
+- `Emoji` `(Tipo: Emoji || Indicação: Vagável)`: Adiciona um emoji dentro do botão. Emojis devem ser colados como *unicode*, *alias* ou estar no seguinte formato: `<nome emoji:emoji ID>`.
+- `Mensagem ID` `(Tipo: Snowflake || Indicação: Esvaziável)`: Adiciona o botão na mensagem ID fornecida. É importante notar que o autor da mensagem ID fornecida **tem que** ser do bot.
 
-- `interaction ID/url` `(Type: String, URL || Flag: Required)`: Depending on the button type, you either set it to an `interaction ID` which is then used in the `$onInteraction[ID]` callback or a `URL` if it's a link button.
-- `label` `(Type: String || Flag: Emptiable)`: The text visible on the button.
-- `style` `(Type: Enum || Flag: Required)`: It's used to specify the button's background color. If the button has a link/url you **have to** set this value to `link`. Check [this section](#button-style) for more details.
-- `disable?` `(Type: Bool || Flag: Vacantable)`:  If set to `yes` the button can't be pressed. Defaults as `no`.
-- `emoji` `(Type: Emoji || Flag: Vacantable)`: Adds an emoji inside the button. Emojis have to be either pasted as *unicode* or be in the following format `<:emoji name:emoji ID>`.
-- `message ID` `(Type: Snowflake || Flag: Vacantable)`: Adds a button to the provided message ID. It's important to note that provided message ID author **has to** be the bot.
+> Botões interativos não podem ter `IDs` duplicados na mesma mensagem. Então como exemplo, você não pode ter dois botões com o ID setado como `teste`.
 
-> Interactive buttons can't have duplicated `ID`'s in the same message. So for example, you can't have two buttons with the ID set to `test`.
-
-> If `url` is used in `interaction ID/url` argument, it **has to** start with `http://` or `https://`
+> Se `URL` é usado no argumento `Interação ID/URL`, tem **que começar** com `http://` ou `https://`.
 
 ## Example
 ```
