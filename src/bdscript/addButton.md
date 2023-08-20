@@ -1,116 +1,43 @@
 # $addButton
-Adds a button to a message.
+Adiciona um botão à uma mensagem
 
-## Syntax
+## Sintaxe
 ```
-$addButton[New row?;Interaction ID/URL;Label;Style;(Disable?;Emoji;Message ID)]
-```
-
-### Parameters
-- `New row?` `(Type: Bool || Flag: Required)`: If set to `yes`, the button will appear in a new row. If set to `no`, the button will appear in the same row as the previous button.
-    > A message can have a maximum of 25 buttons (5 rows of 5 buttons).
-- `Interaction ID/URL` `(Type: String, URL || Flag: Required)`: Depending on the button type, you either set it to `Interaction ID` which is then used in `$onInteraction[ID]` callback or `URL` if it's a link button.
-- `Label` `(Type: String || Flag: Emptiable)`: The text value visible on the button.
-- `Style` `(Type: Enum || Flag: Required)`: It's used to specify the button's background color. If the button has a link/URL, you **have to** set the value to `link`. Check [this section](#button-style) for more details.
-- `Disable?` `(Type: Bool || Flag: Vacantable)`: If set to `yes`, the button can't be pressed. Defaults to `no`.
-- `Emoji` `(Type: Emoji || Flag: Vacantable)`: Adds an emoji inside the button. Emojis have to be either pasted as *unicode*, *alias* or be in the following format `<:emoji name:emoji ID>`.
-- `Message ID` `(Type: Snowflake || Flag: Vacantable)`: Adds the button to the provided message ID. It's important to note that the provided message ID author **has to** be the bot.
-
-> Interactive buttons can't have duplicated `ID`'s in the same message. So for example, you can't have two buttons with the ID set to `test`.
-
-> If `URL` is used in the `Interaction ID/URL` argument, it **has to** start with `http://` or `https://`.
-
-## Button Style
-Buttons can have different styles _(background colors)_.
-Here, are all possible values for the `style` function argument.
-- `primary` - Blue button
-- `secondary` - Gray button
-- `success` - Green button
-- `danger` - Red button
-- `link` - Redirect button
-
-```discord yaml
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    Buttons:
-  components: 
-    - 
-      - type: primary
-        label: Primary
-      - type: primary
-        label: Primary
-        disabled: true
-    - 
-      - type: success
-        label: Success
-      - type: success
-        label: Success
-        disabled: true
-    - 
-      - type: destructive
-        label: Danger
-      - type: destructive
-        label: Danger
-        disabled: true
-    - 
-      - type: secondary
-        label: Secondary
-      - type: secondary
-        label: Secondary
-        disabled: true
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    Other Buttons:
-  components: 
-    - 
-      - type: secondary
-        label: Link
-        url: https://nilpointer-software.github.io/bdfd-wiki/nightly/
-      - type: secondary
-        label: Link
-        disabled: true
-        url: https://nilpointer-software.github.io/bdfd-wiki/nightly/
-    - 
-      - type: secondary
-        label: Emoji
-        emoji: https://em-content.zobj.net/thumbs/120/mozilla/36/heavy-black-heart_2764.png
+$addButton[Nova fila?;Interação ID/URL;Rótulo;Estilo;(Desabilitar?;Emoji;Mensagem ID)]
 ```
 
-> If `link` style is used, the button **won't send** any interactions!
+### Parâmetros
+- `Nova fila?` `(Tipo: Bool || Indicação: Obrigatória)`: Se setado como `yes`, o botão vai aparecer em uma nova fila. Se setado como `no`, o botão vai aparecer na mesma fila que o botão anterior.
+    > Uma mensagem pode ter no máximo 25 botões (5 filas de 5 botões).
+- `Interação ID/URL` `(Tipo: String, URL || Indicação: Obrigatório)`: Dependendo do tipo do botão, você pode setar como `Interaction ID` que é então usada na callback `$onInteraction[ID]` ou `URL` se for um botão de link
+- `Rótulo` `(Tipo: String || Indicação: Esvaziável)`: O valor de texto visível no botão.
+- `Estilo` `(Tipo: Enum || Indicação: Obrigatória)`: É usado para especificar a cor de plano de fundo do botão. Se um botão tem um link/URL, você **tem que** setar o valor como `link`. Veja [essa seção](#button-style) para mais detalhes.
+- `Desabilitar?` `(Tipo: Bool || Indicação: Vagável)`: Se setado como `yes`, O botão não pode ser pressionado. Padroniza como `no`.
+- `Emoji` `(Tipo: Emoji || Indicação: Vagável)`: Adiciona um emoji dentro do botão. Emojis devem ser colados como *unicode*, *alias* ou estar no seguinte formato: `<nome emoji:emoji ID>`.
+- `Mensagem ID` `(Tipo: Snowflake || Indicação: Esvaziável)`: Adiciona o botão na mensagem ID fornecida. É importante notar que o autor da mensagem ID fornecida **tem que** ser do bot.
 
-## Example
+> Botões interativos não podem ter `IDs` duplicados na mesma mensagem. Então como exemplo, você não pode ter dois botões com o ID setado como `teste`.
+
+> Se `URL` é usado no argumento `Interação ID/URL`, tem **que começar** com `http://` ou `https://`.
+
+## Estilo do Botão 
+Botões podem ter diferentes estilos _(cor de plano de fundo)_.
+Aqui, estão todos os valores possíveis para o argumento `style`.
+- `primary` - Botão azul
+- `secondary` - Botão cinza 
+- `success` - Botão verde
+- `danger` - Botão vermelho
+- `link` - Botão de redirecionamento
+![Screenshot_20230820-162630~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/29119e57-1c58-4dfe-abe8-0dd64949f8c8)
+
+> Se o estilo `link` é usado, o botão **não vai** mandar nenhuma interação!
+
+## Exemplo
 ```
 $nomention
-Hello
-$addButton[no;test;Say hello!;primary;no;]
+Oi
+$addButton[no;teste;Dizer olá!;primary;no;]
 ```
+![Screenshot_20230820-161458~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/e4758728-9412-4afb-83f3-70e83a0e84e6)
 
-```discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
-  color: "#E67E22"
-  content: |
-    !example
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    Hello
-  components:
-  - 
-     - type: primary
-       label: Say hello!
-```
-
-> For more info, see the [Buttons Guide](../guides/general/interactions/buttons/aboutButtons.md).
+> Para mais informações, veja a [Guia de Botões](../guides/general/interactions/buttons/aboutButtons.md).
