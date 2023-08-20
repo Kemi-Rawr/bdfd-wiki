@@ -47,11 +47,17 @@ $addButton[Nova fila?;Interação ID/URL;Rótulo;Estilo;(Desabilitar?;Emoji;Mens
 ### Parâmetros
 - `Nova fila?` `(Tipo: Bool || Indicação: Obrigatória)`: Se setado como `yes`, o botão vai aparecer em uma nova fila. Se setado como `no`, o botão vai aparecer na mesma fila que o botão anterior.
     > Uma mensagem pode ter no máximo 25 botões (5 filas de 5 botões).
+
 - `Interação ID/URL` `(Tipo: String, URL || Indicação: Obrigatório)`: Dependendo do tipo do botão, você pode setar como `Interaction ID` que é então usada na callback `$onInteraction[ID]` ou `URL` se for um botão de link
+  
 - `Rótulo` `(Tipo: String || Indicação: Esvaziável)`: O valor de texto visível no botão.
+  
 - `Estilo` `(Tipo: Enum || Indicação: Obrigatória)`: É usado para especificar a cor de plano de fundo do botão. Se um botão tem um link/URL, você **tem que** setar o valor como `link`. Veja [essa seção](#button-style) para mais detalhes.
+  
 - `Desabilitar?` `(Tipo: Bool || Indicação: Vagável)`: Se setado como `yes`, O botão não pode ser pressionado. Padroniza como `no`.
+  
 - `Emoji` `(Tipo: Emoji || Indicação: Vagável)`: Adiciona um emoji dentro do botão. Emojis devem ser colados como *unicode*, *alias* ou estar no seguinte formato: `<nome emoji:emoji ID>`.
+  
 - `Mensagem ID` `(Tipo: Snowflake || Indicação: Esvaziável)`: Adiciona o botão na mensagem ID fornecida. É importante notar que o autor da mensagem ID fornecida **tem que** ser do bot.
 
 > Botões interativos não podem ter `IDs` duplicados na mesma mensagem. Então como exemplo, você não pode ter dois botões com o ID setado como `teste`.
@@ -91,7 +97,8 @@ $nomention
 $username disse olá!
 $editButton[teste;Dizer olá!;danger;yes;]
 ```
-![Screenshot_20230820-185413~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/86e07b0f-d8a7-4434-9ca8-6da3e0fa4d37)
+![Screenshot_20230820-190047~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/b016d92d-8b61-4f2d-997e-c7cb372ef00c)
+
 
 
 # $removeButtons
@@ -100,23 +107,24 @@ Remove todos os botões da mensagem acionada.
 ```
 $removeButtons
 ```
-## Example
+## Examplo
 #### Trigger: `$onInteraction[teste]`
 ```
 $nomention
-$username removeu todos os botões dessa mensagem
+$username removeu todos os botões dessa mensagem!
 $removeButtons
 ```
-![example](https://user-images.githubusercontent.com/113303649/210621352-ae7334a6-a2de-4fbe-8749-7134f9a73af3.png)
+![Screenshot_20230820-190012~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/38ea29d7-08a4-48ad-b96c-721d8ae90b59)
+
 
 # $removeButtons[]
-Removes all buttons from the specified message.
-## Syntax
+Remove todos os botões da mensagem específicada.
+## Sintaxe
 ```
-$removeButtons[message ID]
+$removeButtons[Mensagem ID]
 ```
-### Parameters
-- `message ID` `(Type: Snowflake || Flag: Required)`: Removes buttons from the message with the provided ID. It's important to note that provided message ID author **has to** be the bot.
+### Parâmetros
+- `Mensagem ID` `(Tipo: Snowflake || Indicação: Obrigatória)`: Removes buttons from the message with the provided ID. It's important to note that provided message ID author **has to** be the bot.
 ## Example
 ```
 $nomention
