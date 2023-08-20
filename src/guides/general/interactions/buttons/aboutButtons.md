@@ -58,25 +58,26 @@ $addButton[Nova fila?;Interação ID/URL;Rótulo;Estilo;(Desabilitar?;Emoji;Mens
 
 > Se `URL` é usado no argumento `Interação ID/URL`, tem **que começar** com `http://` ou `https://`.
 
-## Example
+## Examplo
 ```
 $nomention
-Hi
-$addButton[no;test;Say hello!;primary;no;]
+Oi
+$addButton[no;teste;Dizer olá!;primary;no;]
 ```
-![example](https://user-images.githubusercontent.com/16838075/120199057-18c2de00-c223-11eb-9198-997227082a76.png)
+![Screenshot_20230820-161458~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/e4758728-9412-4afb-83f3-70e83a0e84e6)
 
+> Para mais informações, veja a [Guia de Botões](../guides/general/interactions/buttons/aboutButtons.md).
 
 # $editButton
-Edits an already existing button.
+Edita um botão já existente.
 
-## Syntax
+## Sintaxe
 ```
-$editButton[interaction ID/url;label;style;(disable?;emoji;message ID)]
+$editButton[Interação ID/URL;Rótulo;Estilo;(Desabilitar?;Emoji;Mensagem ID)]
 ```
 
-### Parameters
-- `interaction ID/url` `(Type: String, URL || Flag: Required)`: Depending on the button type, you either set it to an `interaction ID` which is then used in the `$onInteraction[ID]` callback or a `URL` if it's a link button.
+### Parâmetros
+- `Interação ID/URL` `(Tipo: String, URL || Indicação: Obrigatório)`: Depending on the button type, you either set it to an `interaction ID` which is then used in the `$onInteraction[ID]` callback or a `URL` if it's a link button.
 - `label` `(Type: String || Flag: Emptiable)`: The text visible on the button.
 - `style` `(Type: Enum || Flag: Required)`: It's used to specify the button's background color. If the button has a link/url you **have to** set this value to `link`. Check [this section](#button-style) for more details.
 - `disable?` `(Type: Bool || Flag: Vacantable)`: If set to `yes` the button can't be pressed. Defaults as `no`. _(Optional)_
