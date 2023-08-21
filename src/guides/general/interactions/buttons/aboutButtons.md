@@ -2,7 +2,7 @@
 Nessa seção, você vai aprender como usar o componente botão.
 
 ## Conteúdo
-[**Funções Usadas**](#funções-usadas) > [**Estilo de Botão**](#estilo-de-botão) > [**Tipo de Botão**](tipo-de-botão) > [**$addButton[]**](#addbutton) > [**$editButton[]**](#editbutton) > [**$removeButtons**](#removebuttons) > [**$removeButtons[]**](#removebuttons-1) > [**$removeComponent[]**](#removecomponent) > [**Criar Interação**](#create-interaction)
+[**Funções Usadas**](#funções-usadas) > [**Estilo de Botão**](#estilo-de-botão) > [**Tipo de Botão**](tipo-de-botão) > [**$addButton[]**](#addbutton) > [**$editButton[]**](#editbutton) > [**$removeButtons**](#removebuttons) > [**$removeButtons[]**](#removebuttons-1) > [**$removeComponent[]**](#removecomponent) > [**Criar Interação**](#criar-interação)
 
 ## Funções Usadas
 - [`$addButton[]`](../../../../bdscript/addButton.md)
@@ -23,7 +23,7 @@ Nessa seção, você vai aprender como usar o componente botão.
 ![Screenshot_20230820-162630~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/af2d839c-cc92-40fc-ab13-c082e9795d32)
 
 
-> Se o estilo `link` é usado, o botão **não enviará** uma interação!
+> Se o estilo `link` é usado, o botão **não enviará** nenhuma interação!
 
 ## Tipo de Botão
 Tem dois tipos de botões: `interativo` e `link`.
@@ -32,12 +32,12 @@ quando um botão interativo é pressionado, ele manda uma interação que pode s
 
 Todo botão interativo tem um `ID`. Uma `$onInteraction[ID]` callback irá apenas ser acionada quando o botão com o mesmo `ID` é pressionado.
 botões interativos podem usar todo estilo exceto `link`.
-> Link buttons **don't send** any interactions. When they're pressed they forward the user to a website.
+> Botões links **não enviam** nenhuma interação. Quando é pressionado eles redirecionam o usuário para uma website.
 > 
-> Link buttons **need to** set their `style` argument value to `link`.
+> Botões link **não precisam** setar o valor de seu argumento `style` como `link`.
 
 # $addButton
-Adiciona um botão à uma mensagem
+Adiciona um botão a uma mensagem
 
 ## Sintaxe
 ```
@@ -46,7 +46,7 @@ $addButton[Nova fila?;Interação ID/URL;Rótulo;Estilo;(Desabilitar?;Emoji;Mens
 
 ### Parâmetros
 - `Nova fila?` `(Tipo: Bool || Indicação: Obrigatória)`: Se setado como `yes`, o botão vai aparecer em uma nova fila. Se setado como `no`, o botão vai aparecer na mesma fila que o botão anterior.
-    > Uma mensagem pode ter no máximo 25 botões (5 filas de 5 botões).
+  > Uma mensagem pode ter no máximo 25 botões (5 filas de 5 botões).
 
 - `Interação ID/URL` `(Tipo: String, URL || Indicação: Obrigatório)`: Dependendo do tipo do botão, você pode setar como `Interaction ID` que é então usada na callback `$onInteraction[ID]` ou `URL` se for um botão de link
   
@@ -84,14 +84,19 @@ $editButton[Interação ID/URL;Rótulo;Estilo;(Desabilitar?;Emoji;Mensagem ID)]
 
 ### Parâmetros
 - `Interação ID/URL` `(Tipo: String, URL || Indicação: Obrigatório)`: Dependendo do tipo do botão, você pode setar como `Interaction ID` que é então usada na callback `$onInteraction[ID]` ou `URL` se for um botão de link
+ 
 - `Rótulo` `(Tipo: String || Indicação: Esvaziável)`: O valor de texto visível no botão.
+  
 - `Estilo` `(Tipo: Enum || Indicação: Obrigatória)`: É usado para especificar a cor de plano de fundo do botão. Se um botão tem um link/URL, você **tem que** setar o valor como `link`. Veja [essa seção](#button-style) para mais detalhes.
-- `Desabilitar?` `(Tipo: Bool || Indicação: Vagável)`: Se setado como `yes`, O botão não pode ser pressionado. Padroniza como `no`. _(Opcional)_
-- `Emoji` `(Tipo: Emoji || Indicação: Vagável)`: Adiciona um emoji dentro do botão. Emojis devem ser colados como *unicode*, *alias* ou estar no seguinte formato: `<nome emoji:emoji ID>`. _(Opcional)_
+  
+- `Desabilitar?` `(Tipo: Bool || Indicação: Vagável)`: Se setado como `yes`, O botão não pode ser pressionado. Padroniza como `no`.
+  
+- `Emoji` `(Tipo: Emoji || Indicação: Vagável)`: Adiciona um emoji dentro do botão. Emojis devem ser colados como *unicode*, *alias* ou estar no seguinte formato: `<nome emoji:emoji ID>`. 
 
-- `Mensagem ID` `(Tipo: Snowflake || Indicação: Esvaziável)`: Adiciona o botão na mensagem ID fornecida. É importante notar que o autor da mensagem ID fornecida **tem que** ser do bot. _(Opcional)_
-## Example
-#### Trigger: `$onInteraction[teste]`
+- `Mensagem ID` `(Tipo: Snowflake || Indicação: Esvaziável)`: Adiciona o botão na mensagem ID fornecida. É importante notar que o autor da mensagem ID fornecida **tem que** ser do bot.
+  
+## Examplo
+#### Gatilho: `$onInteraction[teste]`
 ```
 $nomention
 $username disse olá!
@@ -108,104 +113,111 @@ Remove todos os botões da mensagem acionada.
 $removeButtons
 ```
 ## Examplo
-#### Trigger: `$onInteraction[teste]`
+#### Gatilho: `$onInteraction[teste]`
 ```
 $nomention
 $username removeu todos os botões dessa mensagem!
 $removeButtons
 ```
-![Screenshot_20230820-190012~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/38ea29d7-08a4-48ad-b96c-721d8ae90b59)
+![Screenshot_20230820-190012~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/e7c10592-390a-47e7-8388-fcf2b389a4c2)
+
 
 
 # $removeButtons[]
-Remove todos os botões da mensagem específicada.
+Remove todos os botões da mensagem especificada.
 ## Sintaxe
 ```
 $removeButtons[Mensagem ID]
 ```
 ### Parâmetros
-- `Mensagem ID` `(Tipo: Snowflake || Indicação: Obrigatória)`: Removes buttons from the message with the provided ID. It's important to note that provided message ID author **has to** be the bot.
-## Example
+- `Mensagem ID` `(Tipo: Snowflake || Indicação: Obrigatória)`: Remove botões da mensagem com o ID fornecido. É importante notar que o autor da mensagem fornecida **tem** que ser o bot.
+## Examplo
 ```
 $nomention
-$username removed all buttons from the specified message id
+$username removeu todos os botões da mensagem ID: `$message`
 $removeButtons[$message]
 ```
-![example](https://user-images.githubusercontent.com/113303649/210875885-aa20517e-1c37-4206-8eee-eefa765eb40a.png)
+![Screenshot_20230821-094025~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/c5bab0ce-72da-4243-9d85-202fb78029cc)
 
-# $removeComponent
-Removes a certain component from a message.
-## Syntax
+
+# $removeComponent[]
+Remove um componente específico de uma mensagem.
+## Sintaxe
 ```
-$removeComponent[interaction ID;(message ID)]
+$removeComponent[Interação ID;(Message ID)]
 ```
-> This function supports [select-menu](../selectMenus/aboutSelectMenu.md) and [button](../buttons/aboutButtons.md).
-### Parameters
-- `interaction ID` `(Type: String || Flag: Required)`: The interaction ID of the button, to remove from the message. 
-- `message ID` `(Type: Snowflake || Flag: Vacantable)`: Removes the button from the message with the provided ID. It's important to note that provided message ID author **has to** be the bot. _(Optional)_
-## Example
+> Essa função suporta [Select-menu](../selectMenus/aboutSelectMenu.md) e [Botão](../buttons/aboutButtons.md).
+### Parâmetros
+- `Interaction ID` `(Type: String || Flag: Required)`: A interação ID do botão para remover da mensagem.
+  
+- `Message ID` `(Tipo: Snowflake || Indicação: Esvaziável)`: Remove o botão da mensagem com o ID fornecido. É importante notar que o autor da mensagem fornecida **tem** que ser o bot.
+## Exemplo
 ```
 $nomention
-$username successfully removed the button!
-$removeComponent[test;$message]
+$username removeu o botão `$message[1]` da mensagem `$message[2]`
+$removeComponent[$message[1];$message[2]]
 ```
-![example](https://user-images.githubusercontent.com/113303649/211163378-2aaa540d-b0a1-4511-8f34-6a91260b079d.png)
+![Screenshot_20230821-101946~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/99eaa08e-42e8-42ca-a6f3-c09a2cc3cde3)
+![Screenshot_20230821-102020~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/511ed4ca-534f-4aa8-be8a-d395a7acee57)
 
-![example](https://user-images.githubusercontent.com/113303649/211163615-ecffddcf-1d2b-4065-8445-9ec7ed1eb2b4.png)
-
-# Create interaction
-### Example with `$onInteraction[]` callback:
-1. Create two commands with `!example` and `$onInteraction[test]` triggers.
-2. Paste the following code:
-Code for the command with the `!example` trigger:
+# Criar interação
+### Exemplo com a callback `$onInteraction[]`
+1. Crie dois comandos com `!examplo` e `$onInteraction[test]` como gatilhos, respectivamente
+2. Cole os seguintes códigos:
+   
+Código para o comando com o gatilho `!examplo`:
 ```
 $nomention
-Click the button below!
-$addButton[no;test;Click;primary]
-$addButton[no;button;Button disabled;secondary;yes]
-$addButton[yes;https://botdesignerdiscord.com/;Link;link]
+Pressione o botão abaixo!
+$addButton[no;teste;Pressionar;primary]
+$addButton[no;botão;Botão desabilitado;secondary;yes]
+$addButton[yes;https://botdesignerdiscord.com;Link;link]
 ```
-Code for the command with the `$onInteraction[test]` trigger:
-```
-$nomention
-$editButton[test;Clicked;danger;yes]
-$sendMessage[$username hello!]
-```
-
-> Note that the interaction ID provided in `$onInteraction[]` is the same as the one provided in `$addButton[]`
-> 
-> In `$addButton[]`, `yes` is being used for the `new row?` argument so that the button would appear in the next row.
-3. Execute command `!example`
-
-![example](https://user-images.githubusercontent.com/113303649/211164994-695cf7b6-b2fa-49e5-a78f-dc21db213a9a.png)
-
-### Example with `$onInteraction` callback:
-1. Create two commands with `!example` and `$onInteraction` triggers.
-2. Paste the following code:
-Code for the command with the `!example` trigger:
+Código para o comando com o gatilho `$onInteraction[teste]`:
 ```
 $nomention
-Click the button below!
-$addButton[no;test;Click;primary]
-$addButton[no;button;Button disabled;secondary;yes]
-$addButton[yes;https://botdesignerdiscord.com/;Link;link]
+$editButton[test;Pressionado;primary;yes]
+$sendMessage[olá $username!]
 ```
-Code for the command with the `$onInteraction` trigger:
+
+> Note que a interação ID fornecida em `$onInteraction[]` é a mesma que foi fornecida em `$addButton[]`
+
+> Em `$addButton[]`, `yes` está  sendo usado  no argumento `Nova fila?` para  que o botão então apareça na próxima fila 
+3. Execute o comando `!examplo`
+
+![Screenshot_20230821-104622~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/ed0ebd65-25b4-469b-a0f4-e3dafbd13613)
+![Screenshot_20230821-104458~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/035d6ff1-87d3-4ec9-8383-543b2b6ab651)
+
+### Exemplo com a callback `$onInteraction`:
+1. Crie dois comandos com `!examplo` e `$onInteraction[teste]` como gatilhos, respectivamente
+2. Cole os seguintes códigos:
+
+Código para o comando com o gatilho `!examplo`:
 ```
 $nomention
-$if[$customID==test]
-    $editButton[test;Clicked;danger;yes]
-    $sendMessage[$username hello!]
+Pressione o botão abaixo!
+$addButton[no;teste;Pressionar;primary]
+$addButton[no;botão;Botão desabilitado;secondary;yes]
+$addButton[yes;https://botdesignerdiscord.com;Link;link]
+```
+Código para o comando com o gatilho `$onInteraction`:
+```
+$nomention
+$if[$customID==teste]
+    $editButton[teste;Pressionado!;primary;yes]
+    $sendMessage[olá $username!]
 $endif
 ```
-> Note that the interaction ID returned by `$customID` will be the same as the one provided in `$addButton[]`
-> 
-> In `$addButton[]`, `yes` is being used for the `new row?` argument so that the button would appear in the next row.
-> 
-3. Execute command `!example`
+> Note que a interação ID retornada por `$customID` é a mesma que foi fornecida em `$addButton[]`
 
-![example](https://user-images.githubusercontent.com/113303649/211164994-695cf7b6-b2fa-49e5-a78f-dc21db213a9a.png)
+> Em `$addButton[]`, `yes` está  sendo usado  no argumento `Nova fila?` para  que o botão então apareça na próxima fila
+
+3. Execute o comando `!examplo`
 
 
-> How [`$onInteraction`](../../../../callbacks/onInteraction.md) or [`$onInteraction[]`](../../../..//callbacks/onInteractionComplex.md) works?
+![Screenshot_20230821-105524~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/f7ec3092-9bfc-444f-a1ed-e8524795107f)
+![Screenshot_20230821-105621~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/bebcdbd7-b163-46cf-b8ab-4b9a0ea8585a)
+
+
+> Como [`$onInteraction`](../../../../callbacks/onInteraction.md) e [`$onInteraction[]`](../../../..//callbacks/onInteractionComplex.md) funcionam?
 
