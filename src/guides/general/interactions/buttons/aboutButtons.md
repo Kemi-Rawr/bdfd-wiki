@@ -162,7 +162,7 @@ $removeComponent[$message[1];$message[2]]
 
 # Criar interação
 ### Exemplo com a callback `$onInteraction[]`
-1. Crie dois comandos com `!examplo` e `$onInteraction[test]` como gatilhos, respectivamente
+1. Crie dois comandos com `!examplo` e `$onInteraction[teste]` como gatilhos, respectivamente
 2. Cole os seguintes códigos:
    
 Código para o comando com o gatilho `!examplo`:
