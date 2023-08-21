@@ -1,48 +1,37 @@
 # $addCmdReactions
-Adds reactions to the message that triggered the command.
+Adiciona reações a mensagem que acionou o comando.
 
-## Syntax
+## Sintaxe
 ```
 $addCmdReactions[Emojis;...]
 ```
 
-### Parameters
-- `Emojis` `(Type: Emoji || Flag: Required)`: The emoji(s) the bot reacts with. Use semicolons `;` as a separator to separate multiple emojis.
-
-> You can use **unicode emojis**, **emoji IDs**, and **emoji aliases**.
-> > For **emoji aliases**, make sure to put `:` in front and at the end of the alias. \
-> > For **emoji IDs**, the bot must be present in the server that the emoji originates from. 
+### Parâmetros 
+- `Emojis` `(Tipo: Emoji || Indicação: Obrigatório)`: Os emoji(s) com o qual o bot irá reagir. Use ponto e vírgula `;` para separar múltiplos emojis.
+> Você pode usar **emojis unicode**, **emoji IDs**, e **emoji aliases**.
+> Para **emoji aliases**, Tenha certeza de botar `:` na frente e no fim da alias. 
+> Para **emoji IDs**, o bot deve estar presente no servidor que o emoji tem origem.
 > 
-> List of unicode emojis: [😋 Get Emoji](https://getemoji.com) \
-> List of supported emoji aliases: [Emoji Aliases](https://botdesignerdiscord.com/public/emoji_alias_list)
+> Lista de emojis unicode: [😋 Get Emoji](https://getemoji.com) \
+> Lista de emojis aliases suportadas: [Emoji Aliases](https://botdesignerdiscord.com/public/emoji_alias_list)
 
-## Example
+## Examplo
 ```
 $nomention
 $addCmdReactions[$message]
 ```
-``` discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
-  color: "#E67E22"
-  content: |
-    !example ❤️
-  reactions:
-    - emoji: https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png
-      count: 1
-      reacted: false
-```
-\
-### How to get emoji ID?
+![Screenshot_20230821-161151~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/9d2f5c18-e250-4123-aab7-9c748b3be614)
 
-> This method requires [Developer Mode](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) to be enabled! 
+### Como conseguir o emoji ID?
 
-1. Type `\:TheEmojiName:`
-2. Send the message.
-3. Copy the ID it returns. (The emoji ID should be in this format: `<:emojiName:ID>`. If the emoji is animated, it should look like this: `<a:emojiName:ID>`)
-4. Input the emoji ID into `$addCmdReactions[]`. (e.g. `$addCmdReactions[<:hollyDab:828628880629825546>]`)
+> Esse método requer o [Modo Desenvolvedor](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) ativado!
 
-![example](https://media.discordapp.net/attachments/609162277312266280/745309789491298415/My_Movie_0.gif)
+1. Digite `\:Nome do Emoji:`
+2. Envie a mensagem.
+3. Copie o ID que retornou. (O emoji ID deve estar nesse formato: `<:nome do emoji:ID>`. Se o emoji for animado, deve estar assim: `<a:nome do emoji:ID>`)
+4. Cole o ID em `$addCmdReactions[]`. (Exemplo: `$addCmdReactions[<:chapeu:1143276720779178025>]`)
 
-> If you're still having issues, check the [Troubleshooting](../resources/troubleshooting.md#the-bot-fails-to-add-reactions) page.
+![ezgif-4-09f0f4237a](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/c1e3cd50-6b8b-41cb-ab96-d7d563280296)
+
+
+> Se você ainda está tendo problemas, veja a pagina [Solução de Problemas](../resources/troubleshooting.md#the-bot-fails-to-add-reactions) 
