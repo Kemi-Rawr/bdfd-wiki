@@ -9,7 +9,9 @@ $addCmdReactions[Emojis;...]
 ### Parâmetros 
 - `Emojis` `(Tipo: Emoji || Indicação: Obrigatório)`: Os emoji(s) com o qual o bot irá reagir. Use ponto e vírgula `;` para separar múltiplos emojis.
 > Você pode usar **emojis unicode**, **emoji IDs**, e **emoji aliases**.
-> Para **emoji aliases**, Tenha certeza de botar `:` na frente e no fim da alias. 
+> 
+> Para **emoji aliases**, Tenha certeza de botar `:` na frente e no fim da alias.
+>
 > Para **emoji IDs**, o bot deve estar presente no servidor que o emoji tem origem.
 > 
 > Lista de emojis unicode: [😋 Get Emoji](https://getemoji.com) \
