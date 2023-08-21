@@ -23,7 +23,7 @@ Nessa seção, você vai aprender como usar o componente botão.
 ![Screenshot_20230820-162630~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/af2d839c-cc92-40fc-ab13-c082e9795d32)
 
 
-> Se o estilo `link` é usado, o botão **não enviará** alguma interação!
+> Se o estilo `link` é usado, o botão **não enviará** uma interação!
 
 ## Tipo de Botão
 Tem dois tipos de botões: `interativo` e `link`.
