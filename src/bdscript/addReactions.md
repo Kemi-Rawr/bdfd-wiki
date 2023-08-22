@@ -25,15 +25,17 @@ $addReactions[1️⃣;:two:;3️⃣]
 ```
 ![Screenshot_20230821-230948~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/952bb873-04ef-4dc3-aab2-c72f38ed1fd9)
 
-### How to get emoji ID?
+### Como conseguir o emoji ID?
 
-> This method requires [Developer Mode](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) to be enabled! 
+> Esse método requer o [Modo Desenvolvedor](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) ativado!
 
-1. Type `\:TheEmojiName:`
-2. Send the message.
-3. Copy the ID it returns. (The emoji ID should be in this format: `<:emojiName:ID>`. If the emoji is animated, it should look like this: `<a:emojiName:ID>`)
-4. Input the emoji ID into `$addReactions[]`. (e.g. `$addReactions[<:hollyDab:828628880629825546>]`)
+1. Digite `\:Nome do Emoji:`
+2. Envie a mensagem.
+3. Copie o ID que retornou. (O emoji ID deve estar nesse formato: `<:nome do emoji:ID>`. Se o emoji for animado, deve estar assim: `<a:nome do emoji:ID>`)
+4. Cole o ID em `$addReactions[]`. (Exemplo: `$addReactions[<:chapeu:1143276720779178025>]`)
 
-![example](https://media.discordapp.net/attachments/609162277312266280/745309789491298415/My_Movie_0.gif)
+![ezgif-4-09f0f4237a](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/c1e3cd50-6b8b-41cb-ab96-d7d563280296)
 
-> If you're still having issues, check the [Troubleshooting](../resources/troubleshooting.md#the-bot-fails-to-add-reactions) page.
+
+> Se você ainda está tendo problemas, veja a pagina [Solução de Problemas](../resources/troubleshooting.md#the-bot-fails-to-add-reactions)
+> 
