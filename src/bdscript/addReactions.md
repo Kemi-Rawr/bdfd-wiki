@@ -7,7 +7,7 @@ $addReactions[Emojis;...]
 ```
 
 ### Parâmetros 
-- `Emojis` `(Tipi: Emoji || Indicação: Obrigatório)`: The emoji(s) the bot reacts with. Use semicolons `;` as a separator to separate multiple emojis.
+- `Emojis` `(Tipi: Emoji || Indicação: Obrigatório)`: Os emoji(s) com o qual o bot irá reagir. Use ponto e vírgula `;` para separar múltiplos emojis.
 
 > You can use **unicode emojis**, **emoji IDs**, and **emoji aliases**.
 > > For **emoji aliases**, make sure to put `:` in front and at the end of the alias. \
