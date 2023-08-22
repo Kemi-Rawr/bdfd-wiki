@@ -1,85 +1,38 @@
 # $addField
-Adds a field to an embed.
+Adiciona um field em uma embed.
 
-## Syntax
+## Sintaxe
 ```
-$addField[Name;Value;(Inline?;Index)]
+$addField[Nome;Valor;(Alinhar?;Indexo)]
 ```
 
-> 📌 You can add up to 25 fields per embed.
+> 📌 Você pode adicionar 25 fields por embed.
 
-### Parameters
-- `Name` `(Type: String || Flag: Required)`: The name of the field. It cannot exceed more than 256 characters.
-- `Value` `(Type: String || Flag: Required)`: The value of the field. It cannot exceed more than 1024 characters.
-- `Inline?` `(Type: Bool || Flag: Optional)`: If `yes`, fields will appear in the same line. However, if you have more than 3 fields (or the fields are just too long) with inline enabled, the bot will return rows with 3 fields (2 if there is a thumbnail) in each row. It is set to `no` by default.
-- `Index` `(Type: Integer || Flag: Optional)`: Adds the field to a specified embed index number. [(learn more)](../resources/embedIndexes.md)
+### Parâmetros 
+- `Nome` `(Tipo: String || Indicação: Obrigatório)`: O nome do field. Não pode ultrapassar mais que 256 caracteres.
+  
+- `Valor` `(Tipo: String || Indicação: Obrigatório)`: O valor do field. Não pode ultrapassar mais que 1024 caracteres.
+- `Alinhar?` `(Tipo: Bool || Indicação: Opcional)`: Se `yes`, fields irão aparecer na mesma linha. Porém, Se você tem mais que 3 fields (ou os fields são muito longos) com alinhar ativado, O bot vai retornar filas com 3 fields (2 se tiver uma thumbnail) em cada fila. É setado como não por padrão.
+  
+- `Indexo` `(Tipo: Inteiro || Indicação: Opcional)`: Adiciona o field a uma embed com o número indexo especificado. [(Aprenda mais)](../resources/embedIndexes.md)
 
-> 💡 Inline fields may not appear inline on some mobile devices.
+> 💡 Fields alinhados podem não aparecer alinhados em alguns dispositivos mobile.
 
-## Examples
+## Examplo
 
-### Without inline fields
+### Sem field alinhado
 ```
 $nomention
 $addField[The field name 1!;The field value 1!]
 $addField[The field name 2!;The field value 2!]
 $addField[The field name 3!;The field value 3!]
 ```
-``` discord yaml
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    !example
+![Screenshot_20230821-222749~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/5a3be24d-64c0-4dcc-8ad3-11250d9e6a25)
 
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  content: <none>
-  embed:
-    fields:
-    - name: The field name 1!
-      value: The field value 1!
-    - name: The field name 2!
-      value: The field value 2!
-    - name: The field name 3!
-      value: The field value 3!
-```
-\
 ### With inline fields
 ```
 $nomention
 $addField[The field name 1!;The field value 1!;yes]
 $addField[The field name 2!;The field value 2!;yes]
 $addField[The field name 3!;The field value 3!;yes]
-```
-``` discord yaml
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    !example
-
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  content: <none>
-  embed:
-    fields:
-    - name: The field name 1!
-      value: The field value 1!
-      inline: true
-      inline_index: 1
-    - name: The field name 2!
-      value: The field value 2!
-      inline: true
-      inline_index: 2
-    - name: The field name 3!
-      value: The field value 3!
-      inline: true
-      inline_index: 3
 ```
