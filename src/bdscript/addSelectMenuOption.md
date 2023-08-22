@@ -18,17 +18,17 @@ $addSelectMenuOption[Menu opção ID;Rótulo;Valor;Descrição;(Padrão?;Emoji;M
   
 - `Emoji` `(Tipo: Emoji || Indicação: Vagável)`: O emoji que aparece perto do `Label`.
   
-- `Mensagem ID` `(Tipo: String || Indicação: Vagável)`: O ID de uma mensagem que deve ser adicionado uma nova opção select menu para um select menu existente. Por padrão é a resposta do bot.
+- `Mensagem ID` `(Tipo: String || Indicação: Vagável)`: O ID de uma mensagem que deve ser adicionado uma nova opção de select menu para um select menu existente. Por padrão é a resposta do bot.
 
 ## Examplo
 ```
 $nomention
-$newSelectMenu[Example;1;1;Choose some option]
-$addSelectMenuOption[Example;First;first-option;The first option]
-$addSelectMenuOption[Example;Second;second-option;The second option]
-$addSelectMenuOption[Example;Third;third-option;The third option]
+$newSelectMenu[Examplo;1;1;Escolha alguma opção]
+$addSelectMenuOption[Examplo;Primeira;primeira-opção;A primeira opção]
+$addSelectMenuOption[Examplo;Segunda;segunda-opção;A segunda opção]
+$addSelectMenuOption[Examplo;Terceira;terceira-opção;A terceira opção]
 ```
-![example](https://user-images.githubusercontent.com/113303649/209933666-9ec8ecfc-e666-4caa-b7cb-b0b3c4cdea02.png)\
-![example](https://user-images.githubusercontent.com/113303649/209933373-978c8ade-157f-4991-bb93-929430b4a4eb.png)
+![Screenshot_20230822-123721~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/3248bb47-fb7c-4cba-a06e-f45954cd3c2f)
+![Screenshot_20230822-123743~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/f8218a54-9736-4213-bb4b-ccfb2d966e70)
 
-> For more info, see the [Select Menu Guide](../guides/general/interactions/selectMenus/aboutSelectMenu.md).
+> Para mais informações, veja a [Guia de Select Menu](../guides/general/interactions/selectMenus/aboutSelectMenu.md).
