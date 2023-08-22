@@ -9,42 +9,22 @@ $addReactions[Emojis;...]
 ### Parâmetros 
 - `Emojis` `(Tipi: Emoji || Indicação: Obrigatório)`: Os emoji(s) com o qual o bot irá reagir. Use ponto e vírgula `;` para separar múltiplos emojis.
 
-> You can use **unicode emojis**, **emoji IDs**, and **emoji aliases**.
-> > For **emoji aliases**, make sure to put `:` in front and at the end of the alias. \
-> > For **emoji IDs**, the bot must be present in the server that the emoji originates from. 
+> Você pode usar **emojis unicode**, **emoji IDs**, e **emoji aliases**.
 > 
-> List of unicode emojis: [😋 Get Emoji](https://getemoji.com) \
-> List of supported emoji aliases: [Emoji Aliases](https://botdesignerdiscord.com/public/emoji_alias_list)
-
-## Example
+> > Para **emoji aliases**, Tenha certeza de botar `:` na frente e no fim da alias.
+> >
+> > Para **emoji IDs**, o bot deve estar presente no servidor que o emoji tem origem.
+> 
+> Lista de emojis unicode: [😋 Get Emoji](https://getemoji.com) \
+> Lista de emojis aliases suportadas: [Emoji Aliases](https://botdesignerdiscord.com/public/emoji_alias_list)
+## Examplo
 ```
 $nomention
-Yes or No?
-$addReactions[✅;:x:]
+Escolha um número!
+$addReactions[1️⃣;:two:;3️⃣]
 ```
-``` discord yaml
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    !reactions
+![Screenshot_20230821-230948~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/952bb873-04ef-4dc3-aab2-c72f38ed1fd9)
 
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  content: |
-    Yes or No?
-  reactions:
-    - emoji: https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twemoji12_2705.svg/640px-Twemoji12_2705.svg.png
-      name: ":white_check_mark:"
-      count: 1
-    - emoji: https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Twemoji2_274c.svg/640px-Twemoji2_274c.svg.png
-      name: ":x:"
-      count: 1
-```
-\
 ### How to get emoji ID?
 
 > This method requires [Developer Mode](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) to be enabled! 
