@@ -1,18 +1,23 @@
 # $addSelectMenuOption
-Adds a new select menu option to an existing select menu.
-
-## Syntax
+Adiciona uma nova opção de select menu a um select menu existente
+## Sintaxe
 ```
-$addSelectMenuOption[Menu option ID;Label;Value;Description;(Default?;Emoji;Message ID)]
+$addSelectMenuOption[Menu opção ID;Rótulo;Valor;Descrição;(Padrão?;Emoji;Mensagem ID)]
 ```
 
 ### Parameters
-- `Menu option ID` `(Type: String || Flag: Required)`: The ID used in [`$newSelectMenu[]`](./newSelectMenu.md).
-- `Label` `(Type: String || Flag: Required)`: The name of the option.
-- `Value` `(Type: String || Flag: Required)`: It's the data that gets passed to the `$onInteraction[]` callback. **The value has to be unique in the select menu!**
-- `Description` `(Type: String || Flag: Emptiable)`: A text which shows up under the `Label`.
+- `Menu opção ID` `(Tipo: String || Indicação: Obrigatório)`: O ID usado em [`$newSelectMenu[]`](./newSelectMenu.md).
+  
+- `Rótulo` `(Tipo: String || Indicação: Obrigatório)`: O nome da opção.
+  
+- `Valor` `(Tipo: String || Indicação: Obrigatório)`: São os dados que são passados na callback `$onInteraction[]`. **O valor deve ser único no select menu!**
+  
+- `Descrição` `(Tipo: String || Indicação: Emptiable)`: A text which shows up under the `Label`.
+  
 - `Default?` `(Type: Bool || Flag: Vacantable)`: Whether the option should be selected by default or not. Defaults to `no`. (`yes`/`no`) **There can be only one default option!**
+  
 - `Emoji` `(Type: Emoji || Flag: Vacantable)`: The emoji that shows up next to the `Label`.
+  
 - `Message ID` `(Type: String || Flag: Vacantable)`: The ID of a message that should have a new select menu option added to an existing select menu. By default it's the bot's response.
 
 ## Example
