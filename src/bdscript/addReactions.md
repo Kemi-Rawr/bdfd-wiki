@@ -1,13 +1,13 @@
 # $addReactions
-Adds reactions to the bot's response.
+Adiciona reações a resposta do bot.
 
-## Syntax
+## Sintaxe
 ```
 $addReactions[Emojis;...]
 ```
 
-### Parameters
-- `Emojis` `(Type: Emoji || Flag: Required)`: The emoji(s) the bot reacts with. Use semicolons `;` as a separator to separate multiple emojis.
+### Parâmetros 
+- `Emojis` `(Tipi: Emoji || Indicação: Obrigatório)`: The emoji(s) the bot reacts with. Use semicolons `;` as a separator to separate multiple emojis.
 
 > You can use **unicode emojis**, **emoji IDs**, and **emoji aliases**.
 > > For **emoji aliases**, make sure to put `:` in front and at the end of the alias. \
