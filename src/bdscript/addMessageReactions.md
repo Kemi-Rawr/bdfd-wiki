@@ -1,32 +1,32 @@
 # $addMessageReactions
-Adds reactions to the specified message.
+Adiciona reações na mensagem especificada.
 
-## Syntax
+## Sintaxe
 ```
-$addMessageReactions[Channel ID;Message ID;Emojis;...]
+$addMessageReactions[Canal ID;Mensagem ID;Emojis;...]
 ```
 
 ### Parameters
-- `Channel ID` `(Type: Snowflake || Flag: Required)`: The ID of the channel where the message is located.
-- `Message ID` `(Type: Snowflake || Flag: Required)`: The ID of the message to which the reactions will be added.
-- `Emojis` `(Type: Emoji || Flag: Required)`: The emoji(s) to add as reaction to the message. Use semicolons `;` as a separator to separate multiple emojis.
+- `Canal ID` `(Tipo: Snowflake || Indicação: Obrigatório)`: O ID do canal onde a mensagem está localizada.
+- `Mensagem ID` `(Tipo: Snowflake || Indicação: Obrigatório)`: O ID da mensagem no qual as reações irão ser adicionadas.
+- `Emojis` `(Type: Emoji || Flag: Required)`: Os emoji(s) para adicionar como reações na mensagem. Use ponto e vírgula `;` como um separador para separar múltiplos emojis.
 
-> You can use **unicode emojis**, **emoji IDs**, and **emoji aliases**.
-> > For **emoji aliases**, make sure to put `:` in front and at the end of the alias. \
-> > For **emoji IDs**, the bot must be present in the server that the emoji originates from. 
+> Você pode usar **emojis unicode**, **emoji IDs**, e **emoji aliases**.
+> > Para **emoji aliases**, tenha certeza de colocar `:` na frente e no fim da alias.
+> > Para **emoji IDs**, O bot deve estar presente no servidor que o emoji tem origem.
 > 
-> List of unicode emojis: [😋 Get Emoji](https://getemoji.com) \
-> List of supported emoji aliases: [Emoji Aliases](https://botdesignerdiscord.com/public/emoji_alias_list)
+> Lista de emojis unicode: [😋 Get Emoji](https://getemoji.com) \
+> Lista de emoji aliases suportado: [Emoji Aliases](https://botdesignerdiscord.com/public/emoji_alias_list)
 
-## Example
+## Examplo
 ```
 $nomention
-$trimContent
-$addMessageReactions[$channelID;$message[1];👍;✨;<:coolemoji:991742553340792882>]
+$addMessageReactions[$channelID;$repliedMessageID;✨;:snowflake:;<:clueless:1023577032287846510>]
 
-Successfully added the reactions to the message.
+Reações adicionadas na mensagem com sucesso!
 ```
-![example1](https://user-images.githubusercontent.com/111157596/249183563-89753bae-aa63-4f42-8172-30975f468189.gif)
+![ezgif-1-28cb3aa457](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/35ead963-a6f8-4278-a966-52b25486816b)
+
 
 ## How to get emoji ID?
 
