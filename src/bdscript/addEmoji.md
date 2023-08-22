@@ -1,20 +1,21 @@
 # $addEmoji
-Adds an emoji to the server.
+Adiciona um emoji no servidor.
 
-## Syntax
+## Sintaxe
 ```
-$addEmoji[Name;Image URL;Return emoji?]
+$addEmoji[Nome;Imagem URL;Retornar emoji?]
 ```
 
-### Parameters
-- `Name` `(Type: String || Flag: Required)`: The name of the new emoji.
-- `Image URL` `(Type: URL || Flag: Required)`: The image of the new emoji. The link needs to be a valid image URL.
-- `Return emoji?` `(Type: Bool || Flag: Required)`: Whether to show the emoji in the bot's message or not. (`yes`/`no`)
+### Parâmetros 
+- `Nome` `(Tipo: String || Indicação: Obrigatório)`: O nome do novo emoji.
+  
+- `Imagem URL` `(Tipo: URL || Indicação: Obrigatório)`: A imagem do novo emoji. O link tem que ser uma imagem URL válida.
+- `Retornar emoji?` `(Tipo: Bool || Indicação: Obrigatório)`: Se deve mostrar o emoji na mensagem do bot ou não.
 
-## Example
+## Examplo
 ```
 $nomention
-$argsCheck[>2;Provide all needed arguments! Usage: `!add-emoji (imageURL) (emojiName)`]
-Added new emoji: $addEmoji[$replaceText[$message;$message[1];;1];$message[1];yes]
+$argsCheck[>2;Uso desse comando: `!add-emoji (URL) (Nome)`]
+Novo emoji adicionado: $addEmoji[$replaceText[$message;$message[1];;1];$message[1];yes]
 ```
-![example](https://user-images.githubusercontent.com/113303649/209926846-f957e945-64f8-4e05-b950-9dc20c683850.png)
+![Screenshot_20230821-220903~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/490435a0-da3d-44f2-bac1-491729c26f76)
