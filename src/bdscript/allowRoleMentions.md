@@ -1,34 +1,19 @@
 # $allowRoleMentions
-Enables role pings only for the provided role IDs, while the roles not provided will be "fake pinged" *(the role will be pinged, but users will not be notified)*.
+Ativa a menções de cargos apenas pelos IDs de cargos fornecidos, enquanto os cargos não fornecidos receberão uma "menção fake" *(O cargo vai ser mencionado, porém usuários não serão notificados)*.
 
-## Syntax
+## Sintaxe 
 ```
-$allowRoleMentions[Role IDs;...]
+$allowRoleMentions[IDs de cargos;...]
 ```
 
-### Parameters
-- `Role IDs` `(Type: Snowflake || Flag: Emptiable)`: The role(s) that can be pinged, leave empty to disable pings for every role. Separate role IDs using `;`.
+### Parâmetros 
+- `IDs de cargos` `(Tipo: Snowflake || Indicação: Esvaziável)`: Os cargo(s) que podem ser mencionados, deixe vazio para desabilitar menções para todos os cargos. Separe os IDs de cargos usando `;`.
 
 ## Example
 ```
 $nomention
 $allowRoleMentions[]
-I'm pinging <@&858376972303204362>, but no one got notified; wow!
+Estou mencionando o cargo <@&1102036888145113210>, porém ninguém foi notificado!
 ```
-``` discord yaml
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    !example
+![Screenshot_20230823-013213~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/e7acd75f-934f-46fd-adb3-77b0a4f1db3f)
 
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  roles:
-    Extremely Cool Role: "#FFD700"
-  content: |
-    I'm pinging <@Extremely Cool Role>, but no one got notified; wow!
-```
