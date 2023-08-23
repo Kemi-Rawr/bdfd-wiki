@@ -27,7 +27,8 @@ $addField[The field name 1!;The field value 1!]
 $addField[The field name 2!;The field value 2!]
 $addField[The field name 3!;The field value 3!]
 ```
-![Screenshot_20230823-133754~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/8ef38c51-a093-45e3-ad46-0420ebc02c49)
+![Screenshot_20230823-134333~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/fa7c8cf6-f0ed-4a29-89e9-ff0c45beb261)
+
 
 ### Com field alinhado
 ```
@@ -35,4 +36,5 @@ $addField[O nome do field 1!;O valor do field 1!;yes]
 $addField[O nome do field 2!;O valor do field 2!;yes]
 $addField[O nome do field 3!;O valor do field 3!;yes]
 ```
-![Screenshot_20230823-133754~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/4d7f6265-aa3e-4aa7-80db-9968df6337f2)
+![Screenshot_20230822_105729-1](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/a2edf8d3-4b0e-4a53-b4f2-a7bb72b942b1)
+
