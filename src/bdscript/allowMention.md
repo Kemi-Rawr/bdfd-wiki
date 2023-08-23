@@ -1,48 +1,21 @@
 # $allowMention
-Disables replacing mentions in `$message` with text. 
+Desabilita a substituição de menções em `$message` por texto. 
 
-## Syntax
+## Sintaxe
 ```
 $allowMention
 ```
 
-## Example
+## Examplo
 ```
 $nomention
 $allowMention
 $message
 ```
 
-### With `$allowMention`:
-```discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
-  color: "#E67E22"
-  content: |
-    !example <@RainbowKey>
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    <@RainbowKey>
-```
-\
-### Without `$allowMention`
-```discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
-  color: "#E67E22"
-  content: |
-    !example <@RainbowKey>
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    @RainbowKey
-```
+### Com `$allowMention`:
+![Screenshot_20230823-012104~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/69bb3f1f-3845-46b6-b396-d88ff6874df5)
+
+### Sem `$allowMention`
+![Screenshot_20230823-012142~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/77eb0907-d7b2-471f-855e-a2c878abd511)
+
