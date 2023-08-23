@@ -27,12 +27,12 @@ $addField[The field name 1!;The field value 1!]
 $addField[The field name 2!;The field value 2!]
 $addField[The field name 3!;The field value 3!]
 ```
-![Screenshot_20230821-222749~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/5a3be24d-64c0-4dcc-8ad3-11250d9e6a25)
+![Screenshot_20230823-133754~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/8ef38c51-a093-45e3-ad46-0420ebc02c49)
 
-### With inline fields
+### Com field alinhado
 ```
-$nomention
-$addField[The field name 1!;The field value 1!;yes]
-$addField[The field name 2!;The field value 2!;yes]
-$addField[The field name 3!;The field value 3!;yes]
+$addField[O nome do field 1!;O valor do field 1!;yes]
+$addField[O nome do field 2!;O valor do field 2!;yes]
+$addField[O nome do field 3!;O valor do field 3!;yes]
 ```
+![Screenshot_20230823-133754~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/4d7f6265-aa3e-4aa7-80db-9968df6337f2)
