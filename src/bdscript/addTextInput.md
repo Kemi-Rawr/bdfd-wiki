@@ -9,30 +9,37 @@ $addTextInput[Text input ID;Estilo;Rótulo;(Comprimento mínimo;Comprimento máx
 > 📌 Você pode adicionar até 5 campos de text input em uma modal.
 
 ### Parâmetros 
-- `Text input ID` `(Tipo: String || Flag: Obrigatório)`: The ID that is used to retrieve the text input in the field. **This value must be unique!**
-- `Style` `(Type: Enum || Flag: Required)`: The text input field style, either `short` or `paragraph`.
-- `Label` `(Type: String || Flag: Required)`: The name of the text input field. This value must be less than or equal to 45 characters.
-- `Minimum length` `(Type: Integer || Flag: Vacantable)`: Minimum number of characters a user needs to input. This value must be an integer between 0 and 4000, and can't be greater than the `Maximum length`.
-- `Maximum length` `(Type: Integer || Flag: Vacantable)`: Maximum number of characters a user can input. This value must be an integer between 0 and 4000, and can't be less than the `Minimum length`.  
-- `Required?` `(Type: Bool || Flag: Optional)`: Whether a user must fill in the text input field or not. Defaults to `yes`. (`yes`/`no`)
-- `Value` `(Type: String || Flag: Vacantable)`: The text that is written by default in the text input field. This value must be less than or equal to 4000 characters and must not be less than `Minimum length` and no more than `Maximum length`.
-- `Placeholder` `(Type: String || Flag: Vacantable)`: The text that is displayed if the text input field is empty. This value must be less than or equal to 100 characters.
+- `Text input ID` `(Tipo: String || Indicaçãp: Obrigatório)`: O ID que é usado para retirar a entrada de texto do campo. **Esse valor deve ser único!**
+  
+- `Estilo` `(Tipo: Enum || Indicação: Obrigatório)`: O estilo de text input, pode ser `short` ou `paragraph`.
+  
+- `Rótulo` `(Tipo: String || Indicação: Obrigatório)`: O nome do campo de text input. Esse valor deve ser menor que ou igual a 45 caracteres.
+- `Comprimento mínimo` `(Tipo: Inteiro || Indicação: Vagável)`: Mínimo número de caracteres que um usuário deve inserir. Esse valor deve ser um inteiro entre 0 e 4000, e não pode ser maior que o `Comprimento máximo`.
+  
+- `Comprimento máximo` `(Tipo: Inteiro || Indicação: Vagável)`: Número máximo de caracteres que um usuário deve inserir. Esse valor deve ser um inteiro entre 0 e 4000, e não pode ser menor que o `Comprimento mínimo`.
+  
+- `Obrigatório?` `(Tipo: Bool || Indicação: Opcional)`: Se um usuário deve preencher o campo de text input ou não. Padroniza como `yes`. (`yes`/`no`)
+  
+- `Valor` `(Type: String || Flag: Vagavél)`: O texto que é escrito por padrão no campo de text input. Esse valor deve ser menor que ou igual a 4000 caracteres e não ser menor que o `Comprimento mínimo` e não maior que o `Comprimento máximo`.
+  
+- `Texto reservado` `(Tipo: String || Indicação: Vagável)`: O texto que é mostrado se o campo de text input é vazio. Esse valor deve ser menor que ou igual a 100 caracteres.
 
-### Styles
-- `short` - A small text input field.
-- `paragraph` - A big text input field.
+### Estilos
+- `short` - Um campo de text input pequeno.
+- `paragraph` - Um campo de text input grande.
 
-![styles](https://user-images.githubusercontent.com/113303649/209936324-5a9f1d2b-8eea-48d4-b3cb-749a6d68c2d2.png)
+![Screenshot_20230823-000538~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/113942e4-3956-4108-a9ec-0cfa62ab3e5a)
 
 
-## Example
+## Examplo
 ```
 $nomention
-$newModal[modal;User Bio]
-$addTextInput[modalInput1;short;What is your name?;3;30;yes;;Mikołaj]
-$addTextInput[modalInput2;short;What are your pronouns?;2;30;yes;;He/Him]
-$addTextInput[modalInput3;paragraph;Can you tell us about yourself?;5;1000;no;;I am a Developer]
+$newModal[modal;Biografia de Usuário]
+$addTextInput[modalInput1;short;Qual é o seu nome?;3;30;yes;;Mikołaj]
+$addTextInput[modalInput2;short;Quais são os seus pronomes?;2;30;yes;;Ele/Dele]
+$addTextInput[modalInput3;paragraph;Pode falar um pouco sobre você?;5;1000;no;;I am a Developer]
 ```
-![example](https://user-images.githubusercontent.com/113303649/209936030-02352d16-a81f-486f-aa32-839c82f4fa6d.png)
+![Screenshot_20230823-001425~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/49a5eaef-4a9a-452e-8da4-45b977208bd2)
 
-> For more info, see the [Modals Guide](../guides/general/interactions/modals/aboutModals.md).
+
+> Para mais informações, veja a [Guia de Modals](../guides/general/interactions/modals/aboutModals.md).
