@@ -1,9 +1,9 @@
 # $allowUserMentions
-Enables user pings only for the provided user IDs, while the user not provided will be "fake pinged" *(the user will be pinged, but user will not be notified)*.
+Ativa menções de usuários apenas pelos IDs de usuários fornecidos, enquanto o usuário não fornecido irá receber uma "menção falsa" *(o usuário irá ser mencionado, mas não irá ser notificado)*.
 
-## Syntax
+## Sintaxe 
 ```
-$allowUserMentions[User IDs;...]
+$allowUserMentions[IDs de usuários;...]
 ```
 
 ### Parameters
