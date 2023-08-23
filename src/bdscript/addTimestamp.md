@@ -1,16 +1,17 @@
 # $addTimestamp
-Adds a timestamp to an embed.
+Adiciona o carimbo de data na embed
 
-## Syntax
+## Sintaxe
 ```
 $addTimestamp
 ```
 
-## Example
+## Examplo
 ```
 $nomention
-$description[Hi!]
-$footer[That is the timestamp =>]
+$description[Ola!]
+$footer[Esse é o carimbo de data =>]
 $addTimestamp
+$color[#ffffff]
 ```
-![example](https://user-images.githubusercontent.com/113303649/209937294-5cf68498-dcb9-4dcc-88b9-4da824f86e3e.png)
+![Screenshot_20230823-010438~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/48aff722-d1f3-48f3-bf78-c651078e31b7)
