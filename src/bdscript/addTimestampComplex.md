@@ -1,20 +1,19 @@
 # $addTimestamp[]
-Adds a timestamp to a specific embed.
+Adiciona o carimbo de data em uma embed específica.
 
-## Syntax
+## Sintaxe 
 ```
-$addTimestamp[Index]
+$addTimestamp[Indexo]
 ```
 
-### Parameters
-- `Index` `(Type: Integer || Flag: Optional)`: To which embed the timestamp should be added to. [(learn more)](../resources/embedIndexes.md)
+### Parâmetros
+- `Indexo` `(Tipo: Inteiro || Indicação: Opcional)`: Para qual embed o carimbo de data deve ser adicionado. [(Aprenda mais)](../resources/embedIndexes.md)
 
-## Example
+## Examplo
 ```
-$nomention
-$description[Hi!]
-$description[Timestamp!;2]
-$footer[That is the timestamp =>;2]
+$description[Olá!]
+$description[Carimbo de data ⬇️;2]
+$footer[Esse é o carimbo de data =>;2]
 $addTimestamp[2]
 ```
-![example](https://user-images.githubusercontent.com/113303649/211189667-92fc90ff-0cca-4963-a649-8b39508d0968.png)
+![Screenshot_20230823-011043~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/89ce2f68-80da-41cb-a8bf-4472ce84115a)
