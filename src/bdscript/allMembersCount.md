@@ -1,29 +1,15 @@
 # $allMembersCount
-Returns the total number of users from every server the bot is in.
+Retorna o número total de usuários de cada servidor que o bot está.
 
-## Syntax
+## Sintaxe 
 ```
 $allMembersCount
 ```
 
-## Example
+## Examplo
+
 ```
 $nomention
-I'm serving $allMembersCount users!
+Estou servindo $allMembersCount usuários!
 ```
-
-``` discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
-  color: "#E67E22"
-  content: |
-    !example
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    I'm serving 8560 users!
-```
+![Screenshot_20230823-011658~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/27a1295a-7618-4d8d-bb40-843c7d256fcb)
