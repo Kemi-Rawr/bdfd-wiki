@@ -1,29 +1,29 @@
 # $alternativeParsing
-Changes the way how triggers are read.
+Muda a forma que os gatilhos são lidos.
 
-## Syntax
+## Sintaxe 
 ```
 $alternativeParsing
 ```
-> This function was added at the end of 2019 as an experiment, and it can be unstable and break your commands. You should not use `$alternativeParsing` when making your bot.
+> Essa função foi adicionada no final de 2019 como um experimento, e pode ser não-instável e quebrar seus comandos. Você não deveria usar `$alternativeParsing` em uma criação de bot público.
 
-## Example
-1. Create two commands and set the trigger `hello` for one command and `helloworld` for the other.
-2. Add the `$alternativeParsing` function to the command code with the `hello` trigger.
+## Examplo
+1. Crie dois comandos e sete o gatilho `olá` para um comando e `olámundo` para o outro.
+2. Adicione a função `$alternativeParsing` no código do comando com o gatilho `olá`.
 
-    Code with trigger `hello`:
+    Código com o gatilho `olá`:
     ```
     $nomention
     $alternativeParsing
-    $description["hello"]
+    $description["olá"]
     ```
-    Code with trigger `helloworld`:
+    Código com o gatilho `olámundo`:
     ```
     $nomention
-    $description["helloworld"]
+    $description["olámundo"]
     ```
-3. Execute commands.
-    ### With `$alternativeParsing`
+3. Execute os comandos.
+    ### Com `$alternativeParsing`
     ``` discord yaml
     - user_id: 729343563401265193
       username: Nicky
@@ -56,7 +56,7 @@ $alternativeParsing
         description: "\"helloworld\""
     ```
     \
-    ### Without `$alternativeParsing`
+    ### Sem `$alternativeParsing`
     ``` discord yaml
     - user_id: 729343563401265193
       username: Nicky
