@@ -1,31 +1,16 @@
 # $argCount
-Returns how many words (aka arguments/args) are in the provided text.
-
-## Syntax
+Retorna quantas palavras (também conhecidas como argumentos/args) estão no texto fornecido.
+## Sintaxe
 ```
-$argCount[Text]
+$argCount[Texto]
 ```
 
-### Parameters
-- `Text` `(Type: String || Flag: Emptiable)`: The text to get the word count for.
+### Parâmetros 
+- `Texto` `(Tipo: String || Indicação: Esvaziável)`: O texto para contar a quantidade de palavras 
 
-## Example
+## Examplo
 ```
 $nomention
-Word count: $argCount[$message]
+Quantidade de palavras: $argCount[$message]
 ```
-```discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
-  color: "#E67E22"
-  content: |
-    !example Hello noit!
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    Word count: 2
-```
+![Screenshot_20230825-010548~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/216c082e-946c-4299-82a4-b229b01160c0)
