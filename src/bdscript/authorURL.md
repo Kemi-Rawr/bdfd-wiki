@@ -1,37 +1,23 @@
 # $authorURL
-Adds a hyperlink to the author text.
+Adiciona um hyperlink no texto do autor.
 
-## Syntax
+## Sintaxe 
 ```
-$authorURL[URL;(Index)]
+$authorURL[URL;(Indexo)]
 ```
-> `$authorURL[]` will not work if there is no text provided in [`$author[]`](./author.md).
+> `$authorURL[]` não vai funcionar se não tiver nenhum texto fornecido em [`$author[]`](./author.md).
 
-### Parameters
-- `URL` `(Type: URL || Flag: Emptiable)`: The link to set as the author hyperlink.
-- `Index` `(Type: Integer || Flag: Optional)`: To which embed the author URL will be added. [(learn more)](../resources/embedIndexes.md)
+### Parâmetros 
+- `URL` `(Tipo: URL || Indicação: Esvaziável)`: O link para setar como o hyperlink do autor.
+  
+- `Indexo` `(Tipo: Inteiro || Indicação: Opcional)`: Para qual embed o autor URL irá ser adicionado. [(aprenda mais)](../resources/embedIndexes.md)
 
-## Example
+## Examplo
 ```
 $nomention
-$author[Click me to visit the BDFD website!]
+$author[Clique em mim para visitar a website BDFD!]
 $authorURL[https://botdesignerdiscord.com]
 ```
-``` discord yaml
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    !example
+![Screenshot_20230825-124148~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/2b95c698-e283-47b2-b4bf-085b03be9e56)
+![Screenshot_20230825-124208~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/8b9e6376-b0a1-4231-8fd4-75b34b9f4166)
 
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  content: <none>
-  embed:
-    author:
-      text: Click me to visit the BDFD website!
-      url: https://botdesignerdiscord.com
-```
