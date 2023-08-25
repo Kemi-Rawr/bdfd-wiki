@@ -1,7 +1,7 @@
 # $author
 Adiciona texto do autor em uma embed.
 
-## Syntax
+## Sintaxe
 ```
 $author[Texto;(Indexo)]
 ```
