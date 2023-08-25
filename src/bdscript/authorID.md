@@ -1,29 +1,14 @@
 # $authorID
-Returns message's author ID. 
+Retorna o ID do autor da mensagem. 
 
-## Syntax
+## Sintaxe
 ```
 $authorID
 ```
 
-## Example
+## Examplo
 ```
 $nomention
-This command was executed by <@$authorID>!
+Comando executado por <@$authorID> (`$authorID`)!
 ```
-``` discord yaml
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    !example
-
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  highlight: true
-  content: |
-    This command was executed by <@Nicky>!
-```
+![Screenshot_20230825-013356~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/8598e96b-be04-4bfa-a9e7-73fb6eb3acb6)
