@@ -1,5 +1,5 @@
 # $authorIcon
-Adiciona um ícone na seção do autor na embed.
+Adiciona um ícone na seção de autor na embed.
 
 ## Sintaxe 
 ```
