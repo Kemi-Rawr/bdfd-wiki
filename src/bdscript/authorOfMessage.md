@@ -11,7 +11,7 @@ $authorOfMessage[ID do Canal;ID da Mensagem]
   
 - `Message ID` `(Type: Snowflake || Flag: Required)`: A mensagem no qual o ID do autor irá ser retornado.
 
- > [Guia de como pegar o ID de Canal/Mensagem.](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)
+  > [Guia de como pegar o ID de Canal/Mensagem.](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)
 
 ## Examplo
 ```
