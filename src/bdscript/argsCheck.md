@@ -1,49 +1,20 @@
 # $argsCheck
-When this function is used, the command can only be executed if the user’s message contains a certain amount of arguments (words).
+Quando essa função é usada, o comando so pode ser executado se a mensagem do usuário conter uma quantidade específica de argumentos (palavrad).
 
-## Syntax
+## Sintaxe
 ```
-$argsCheck[How many?;Error message]
+$argsCheck[Quantos?;Mensagem de erro]
 ```
 
 ### Parameters
-- `How many?` `(Type: HowMany || Flag: Required)`: How many arguments there should be in the user’s message.
-   > If you want users to have **3 or more arguments** in their message, you can use `>3`. If you want users to have **less than 3 arguments** in their message, you can use `<3`. If you want the users to have **exactly 3 arguments** in their message, put `3`. 
-- `Error message` `(Type: String || Flag: Emptiable)`: The message that the bot will send if the user has too many/few arguments.
+- `Quantos?` `(Tipo: HowMany || Indicação: Obrigatório)`: Quantos argumentos devem estar na mensagem do usuário.
+   > Se você quiser que os usuários tenham **3 ou mais argumentos** em suas mensagem, você pode usar `>3`. Se você quiser que os usuários tenham **menos que 3 argumentos** em suas mensagem, você pode usar `<3`. Se você quiser que os usuários tenham **exatos 3 argumentos** em suas mensagem, coloque `3`. 
+- `Mensagem de erro` `(Tipo: String || Indicação: Esvaziável)`: A mensagem que o bot irá mandar se o usuário tiver muitos/poucos argumentos.
 
-## Example
+## Examplo
 ```
 $nomention
-$argsCheck[>1;❌ Please provide something for me to say!]
+$argsCheck[>1;❌ forneça algo para eu falar!]
 $message
 ```
-
-``` discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
-  color: "#E67E22"
-  content: |
-    !example
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    ❌ Please provide something for me to say!
-- user_id: 803569638084313098
-  username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
-  color: "#E67E22"
-  content: |
-    !example Hello World!
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    Hello World!
-```
-
+![Screenshot_20230825-011609~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/fe6ce8db-2848-4b5d-8f87-b408cfa94b1e)
