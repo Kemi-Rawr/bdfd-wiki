@@ -1,13 +1,12 @@
 # $awaitFunc
-Used to initiate an awaited command.
-
-## Syntax
+Usado para iniciar um comando awaited.
+## Sintaxe 
 ```
-$awaitFunc[Name;(User ID;Channel ID)]
+$awaitFunc[Nome;(ID de Usuário;ID de Canal)]
 ```
 
-### Parameters
-- `Name` `(Type: String || Flag: Required)`: The name used inside the [`$awaitedCommand[]`](../callbacks/awaitedCommand.md) and [`$awaitedCommandError[]`](../callbacks/awaitedCommandError.md) callbacks.
+### Parâmetros 
+- `Nome` `(Type: String || Indicação: Obrigatório)`: O nome usado nas callbacks [`$awaitedCommand[]`](../callbacks/awaitedCommand.md) e [`$awaitedCommandError[]`](../callbacks/awaitedCommandError.md).
 - `User ID` `(Type: Snowflake || Flag: Vacantable)`: The user the awaited command will trigger for. Uses command author, if `User ID` is not present.
 - `Channel ID` `(Type: Snowflake || Flag: Optional)`: The channel where the command will be awaited. Uses current channel, if `Channel ID` is not present.
 
