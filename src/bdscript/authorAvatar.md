@@ -1,34 +1,19 @@
 # $authorAvatar
-Returns the author's avatar URL.
+Retorna o URL do avatar do autor.
 
-## Syntax
+## Sintaxe
 ```
 $authorAvatar
 ```
 
-## Example
+## Examplo
 ```
 $nomention
 $image[$authorAvatar]
 ```
-``` discord yaml
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    !authorAvatar
-
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  content: <none>
-  embed:
-    image: https://user-images.githubusercontent.com/111157596/257052136-4b8d5715-b381-4d5f-8c46-8ae0be53c8d8.png
-```
+![Screenshot_20230825-012841~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/dee35b03-aa51-47fc-ba0b-fb71ff7b3f81)
 
 
-> You can use `?size=size` at the end of the avatar URL to increase/decrease the image size. Example sizes: 1024, 2048, 4096. 
+> Você pode usar `?size=size` no final do URL do avatar para aumentar/diminuir o tamanho da imagem. Exemplos de tamanho: 1024, 2048, 4096. 
 >
->  (e.g. `$image[$authorAvatar?size=4096]`)
+>  (Por exemplo: `$image[$authorAvatar?size=4096]`)
