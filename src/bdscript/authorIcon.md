@@ -1,38 +1,22 @@
 # $authorIcon
-Adds an icon to the author section in the embed.
+Adiciona um ícone na seção do autor na embed.
 
-## Syntax
+## Sintaxe 
 ```
-$authorIcon[Image URL;(Index)]
+$authorIcon[URL de imagem;(Indexo)]
 ```
 
-> `$authorIcon[]` will not work if there is no text provided in [`$author[]`](./author.md).
+> `$authorIcon[]` não vai funcionar se não tiver um texto fornecido em [`$author[]`](./author.md).
 
-### Parameters
-- `Image URL` `(Type: URL || Flag: Emptiable)`: The image for the author icon. This must be a valid image URL.
-- `Index` `(Type: Integer || Flag: Optional)`: To which embed the author icon will be added. [(learn more)](../resources/embedIndexes.md)
+### Parâmetros
+- `URL de imagem` `(Tipo: URL || Indicação: Esvaziavel)`: A imagem para o ícone do autor. Isso tem que ser um URL válido.
+  
+- `Indexo` `(Tipo: Inteiro || Indicação: Opcional)`: Para qual embed o ícone do autor irá ser adicionado. [(aprenda mais)](../resources/embedIndexes.md)
 
-## Example
+## Examplo
 ```
 $nomention
 $authorIcon[$authorAvatar]
-$author[⬅️ That is the author icon. This is the author text.]
+$author[⬅️ Esse é o ícone do autor. Esse é o texto do autor.]
 ```
-``` discord yaml
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    !example
-
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  content: <none>
-  embed:
-    author:
-      text: ⬅️ That is the author icon. This is the author text.
-      image: https://user-images.githubusercontent.com/111157596/257052136-4b8d5715-b381-4d5f-8c46-8ae0be53c8d8.png
-```
+![Screenshot_20230825-014130~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/09850389-dcc9-4574-bb26-3cb902cdf2ab)
