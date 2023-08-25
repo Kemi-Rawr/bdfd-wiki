@@ -1,88 +1,36 @@
 # $and
-Returns `true` if every provided condition is true, otherwise `false` is returned.
+Retorna `true` se todas as condições fornecidas são verdadeiras, ou se não `false` é retornado.
 
-## Syntax
+## Sintaxe
 ```
-$and[Conditions;...]
+$and[Condições;...]
 ```
 
 ### Parameters
-- `Conditions` `(Type: String || Flag: Required)`: Checks that will be carried out. All conditions must be true for this function to return `true`. Separate conditions using `;`.
+- `Condições` `(Tipo: String || Indicação: Obrigatório)`: Verificações que serão realizadas. Todas as condições devem ser verdadeiras para essa função retornar `true`. Separe as condições usando `;`.
 
-### Signs
-`==` - Equal
+### Operadores
+`==` - Igual
 
-`!=` - Not Equal
+`!=` - Não Igual
 
-`<` -  Less Than
+`<` -  Menor Que
 
-`>` - Greater Than
+`>` - Maior Que
 
-`>=` - Greater Than Or Equal To
+`>=` - Maior Que ou Igual a
 
-`<=` - Less Than Or Equal To
-- These signs could vary in meaning based on the order or intent of the if statement.
-- If you are using text as your `x` and/or `y`, you can not use any other signs besides `==` and `!=`. However for numbers, you can use any sign shown in the above list.
+`<=` - Menor Que ou Igual a
+- Esses operadores podem variar no significado baseado na ordem ou na intenção da declaração do If.
+- Se você estiver usando texto como `x` e/ou `y`, Você não pode usar qualquer outro operador além de == e `!=`. Porém para números, você pode usar qualquer operador na lista acima.
 
-## Example
+## Examplo
 ```
 $nomention
-$and[$nickname==MineBartekSA;$message==Update]
+$and[$nickname==Kemi v2;$message==Olá]
 ```
+![Screenshot_20230825-005645~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/05826074-e185-4ced-a354-5106234b847d)
+![Screenshot_20230825-005724~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/c655e687-0ab0-4a27-a29e-9758476e9d5f)
 
-``` discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
-  color: "#E67E22"
-  content: |
-    !example Update
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    false
-- user_id: 803569638084313098
-  username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
-  color: "#E67E22"
-  content: |
-    !example
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    false
-- user_id: 154148273307910144
-  username: MineBartekSA
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/1ecd3b3a-4bdf-441a-98ad-361254426a74
-  color: "#f1bdee"
-  content: |
-    !example 
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    false
-- user_id: 154148273307910144
-  username: MineBartekSA
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/1ecd3b3a-4bdf-441a-98ad-361254426a74
-  color: "#f1bdee"
-  content: |
-    !example Update
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    true
-  ```
 
-> For more info, see the [If Guide](../guides/ifStatements.md).
+> Para mais informações, Veja a [Guia de If](../guides/ifStatements.md).
