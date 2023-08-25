@@ -24,68 +24,8 @@ $alternativeParsing
     ```
 3. Execute os comandos.
     ### Com `$alternativeParsing`
-    ``` discord yaml
-    - user_id: 729343563401265193
-      username: Nicky
-      color: "#EE7908"
-      content: |
-        hello
-    
-    - user_id: 566613317972394004
-      username: Wiki Bot
-      color: "#748BD4"
-      bot: true
-      verified: true
-      content: <none>
-      embed:
-        description: "\"hello\""
-    
-    - user_id: 729343563401265193
-      username: Nicky
-      color: "#EE7908"
-      content: |
-        helloworld
-    
-    - user_id: 566613317972394004
-      username: Wiki Bot
-      color: "#748BD4"
-      bot: true
-      verified: true
-      content: <none>
-      embed:
-        description: "\"helloworld\""
-    ```
-    \
+    ![Screenshot_20230825-002507~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/f0aff97c-4a64-447f-b57d-2055f4c1693b)
+
     ### Sem `$alternativeParsing`
-    ``` discord yaml
-    - user_id: 729343563401265193
-      username: Nicky
-      color: "#EE7908"
-      content: |
-        hello
-    
-    - user_id: 566613317972394004
-      username: Wiki Bot
-      color: "#748BD4"
-      bot: true
-      verified: true
-      content: <none>
-      embed:
-        description: "\"hello\""
-    
-    - user_id: 729343563401265193
-      username: Nicky
-      color: "#EE7908"
-      content: |
-        helloworld
-    
-    - user_id: 566613317972394004
-      username: Wiki Bot
-      color: "#748BD4"
-      bot: true
-      verified: true
-      content: <none>
-      embeds:
-      - description: "\"helloworld\""
-      - description: "\"hello\""
-    ```
+    ![Screenshot_20230825-002621~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/b05500fe-b470-4a8a-8fe3-6a487737764b)
+
