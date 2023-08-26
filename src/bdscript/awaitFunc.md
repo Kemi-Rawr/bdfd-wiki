@@ -1,50 +1,20 @@
 # $awaitFunc
-Usado para iniciar um comando awaited.
+Usado para iniciar um comando esperado.
 ## Sintaxe 
 ```
 $awaitFunc[Nome;(ID de Usuário;ID de Canal)]
 ```
 
 ### Parâmetros 
-- `Nome` `(Type: String || Indicação: Obrigatório)`: O nome usado nas callbacks [`$awaitedCommand[]`](../callbacks/awaitedCommand.md) e [`$awaitedCommandError[]`](../callbacks/awaitedCommandError.md).
-- `User ID` `(Type: Snowflake || Flag: Vacantable)`: The user the awaited command will trigger for. Uses command author, if `User ID` is not present.
-- `Channel ID` `(Type: Snowflake || Flag: Optional)`: The channel where the command will be awaited. Uses current channel, if `Channel ID` is not present.
+- `Nome` `(Tipo: String || Indicação: Obrigatório)`: O nome usado nas callbacks [`$awaitedCommand[]`](../callbacks/awaitedCommand.md) e [`$awaitedCommandError[]`](../callbacks/awaitedCommandError.md).
+  
+- `ID de usuário` `(Tipo: Snowflake || Indicação: Vagável)`: O usuário que o comando esperado irá ser acionado. Usa o autor do comando, se `ID de usuário` não estiver presente.
+  
+- `ID de Canal` `(Tipo: Snowflake || Indicação: Opcional)`: O canal onde o comando irá ser esperado. Usa o canal atual, se `ID de Canal` não estiver presente.
 
-## Example
+## Examplo
 ```
 $nomention
-What do you want me to say?
+O que você quer que eu fale?
 $awaitFunc[say]
 ```
-``` discord yaml
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    !say
-
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  content: |
-    What do you want me to say?
-
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    I love BDFD!
-
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  content: |
-    I love BDFD!
-```
-
-
-> For more info, see the [Awaited Commands Guide](../guides/general/awaitedCommands.md).
