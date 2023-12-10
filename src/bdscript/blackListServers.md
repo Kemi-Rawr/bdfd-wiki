@@ -15,7 +15,7 @@ $blackListServers[IDs de Guildas;...;Mensagem de Erro]
 ## Exemplo
 ```
 $nomention
-$blackListServers[1009018669982031912;❌ Este comando não pode ser usado aqui!]
+$blackListServers[1096663249346371656;❌ Este comando não pode ser usado aqui!]
 **Olá $username!**
 *ID da Guilda: $guildID*
 ```
