@@ -17,3 +17,4 @@ $nomention
 $blackListIDs[1043373475747864647;527611538291425321;❌ Você não pode usar este comando!]
 Pong! $ping ms
 ```
+![Screenshot_20231210-184802~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/4f7543d1-2b4e-4fe7-a1c3-e4729229cced)
