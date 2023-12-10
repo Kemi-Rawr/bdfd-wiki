@@ -1,19 +1,18 @@
 # $blackListUsers
-Blocks certain users from using the command. Uses usernames instead of user IDs.
+Bloqueia certo usuários de usar o comando. Utiliza nome de usuários ao invés de ID de usuários.
 
-## Syntax
+## Sintaxe
 ```
-$blackListUsers[Usernames;...;Error message]
+$blackListUsers[Nome de usuários;...;Mensagem de Erro]
 ```
 
-### Parameters
-- `Usernames` `(Type: String || Flag: Emptiable)`: The username(s) to blacklist. Use semicolons `;` as a separator to separate multiple usernames.
-- `Error message` `(Type: String || Flag: Emptiable)`: The message that will be sent when the username of the user running the command is blacklisted.
+### Parâmetros
+- `Nome de usuários` `(Tipo: String || Indicação: Esvaziável)`: Os nome de usuário(s) para bloquear. Use ponto e vírgulas `;` como um separador para separar múltiplos nome de usuários.
+- `Mensagem de Erro` `(Tipo: String || Indicação: Esvaziável)`: A mensagem que irá ser enviada quando o nome de usuário do usuário utilizando o comando estiver bloqueado
 
-## Example
+## Exemplo
 ```
 $nomention
-$blackListUsers[RainbowKey;❌ You can't use this command!]
-Hello $username!
+$blackListUsers[kemi_nyah;❌ Você não pode usar este comando!]
+Olá $username!
 ```
-![example](https://user-images.githubusercontent.com/113303649/211997181-4ad65536-9b54-4f15-bd1f-07eb0df92686.png)
