@@ -7,7 +7,7 @@ $ban[Motivo]
 ```
 
 ### Parâmetros 
-- `Motivo` `(Tipo: String || Indicação: Esvaziavel)`: O motivo para o banimento, que vai ser salvo no registro de auditoria.
+- `Motivo` `(Tipo: String || Indicação: Esvaziável)`: O motivo para o banimento, que vai ser salvo no registro de auditoria.
 
 ## Exemplo
 ```
