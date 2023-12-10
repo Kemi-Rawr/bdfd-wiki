@@ -6,11 +6,11 @@ Bane o usuário mencionado.
 $ban
 ```
 
-## Example
+## Exemplo
 ```
 $nomention
 $ban
-<@$mentioned[1]> was banned!
+<@$mentioned[1]> foi banido!
 ```
 
 ```discord yaml
