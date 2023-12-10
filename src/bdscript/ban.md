@@ -1,7 +1,7 @@
 # $ban
-Bans the mentioned user.
+Bane o usuário mencionado.
 
-## Syntax
+## Sintaxe
 ```
 $ban
 ```
