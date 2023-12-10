@@ -1,19 +1,20 @@
 # $blackListRolesIDs
-Blocks users with certain roles from using the command. If the user has any role in the blacklist, they will not be able to run the command.
+Bloqueia usuários com certos cargos de usar o comando. Se o usuário possuir qualquer cargo da lista negra, eles não poderão usar o comando.
 
 ## Syntax
 ```
-$blackListRolesIDs[Role IDs;...;Error message]
+$blackListRolesIDs[IDs de Cargos;...;Mensagem de Erro]
 ```
 
 ### Parameters
-- `Role IDs` `(Type: Snowflake || Flag: Emptiable)`: The role(s) that will be blacklisted. Use semicolons `;` as a separator to separate multiple role IDs.
-- `Error message` `(Type: String || Flag: Emptiable)`: The message that will be sent if the user has a role from the blacklist.
+- `IDs de Cargos` `(Tipo: Snowflake || Indicação: Esvaziável)`: Os cargo(s) que serão bloqueados. Use ponto e vírgulas `;` como um separador para separar múltiplos IDs de Cargos.
+- `Mensagem de Erro` `(Tipo: String || Indicação: Esvaziável)`: A mensagem que irá ser enviada se o usuário possuir um cargo da lista negra.
 
-## Example
+## Exemplo
 ```
 $nomention
-$blackListRolesIDs[1009019299987476540;1014547313957539901;❌ You can't use this command!]
+$blackListRolesIDs[1009019299987476540;1014547313957539901;❌ Você não pode usar este comando!]
 Pong! $ping ms
 ```
-![example](https://user-images.githubusercontent.com/113303649/210046896-9e45b0c5-68f1-49b8-9bf0-90694df688cf.png)
+![Screenshot_20231210-190458~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/341b794b-f632-4a97-9a76-2090aea4c0da)
+
