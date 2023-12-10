@@ -1,23 +1,23 @@
 # $blackListServers
-Blocks certain servers from using the command.
+Bloqueia certos servidores de usar o comando.
 
-## Syntax
+## Sintaxe 
 ```
-$blackListServers[Guild IDs;...;Error message]
+$blackListServers[IDs de Guildas;...;Mensagem de Erro]
 ```
 
-### Parameters
-- `Guild IDs` `(Type: Snowflake || Flag: Emptiable)`: The server(s) to blacklist from using a command. Use semicolons `;` as a separator to separate multiple server IDs.
-   > [Where do I find server IDs? (click-me)](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)
-- `Error message` `(Type: String || Flag: Emptiable)`: The message that will be sent if the command is run in a blacklisted server.
+### Parâmetros
+- `IDs de Guildas` `(Tipo: Snowflake || Indicação: Esvaziável)`: Os servidor(es) para bloquear de usar o comando. Use ponto e vírgulas `;` como um separador para separar múltiplos IDs de Servidores.
+   > [Como eu acho IDs de servidores? (me clique)](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)
+- `Mensagem de Erro` `(Tipo: String || Indicação: Esvaziável)`: A mensagem que irá ser enviada se o comando for usado em um servidor bloqueado.
 
 
-## Example
+## Exemplo
 ```
 $nomention
-$blackListServers[1009018669982031912;❌ You can't use this command!]
-**Hello $username!**
-*Guild ID: $guildID*
+$blackListServers[1009018669982031912;❌ Este comando não pode ser usado aqui!]
+**Olá $username!**
+*ID da Guilda: $guildID*
 ```
 ![example](https://user-images.githubusercontent.com/113303649/211995843-0d9eba33-e36a-484f-ad97-eb6e67391af1.png)\
 ![example](https://user-images.githubusercontent.com/113303649/211996168-47ba94ff-e03d-40f9-8b33-5758454f5ce9.png)
