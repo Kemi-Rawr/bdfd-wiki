@@ -16,3 +16,4 @@ $nomention
 $blackListUsers[kemi_nyah;❌ Você não pode usar este comando!]
 Olá $username!
 ```
+![Screenshot_20231210-192852~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/7f6a5fdf-46a7-4221-9946-15ad11af4c94)
