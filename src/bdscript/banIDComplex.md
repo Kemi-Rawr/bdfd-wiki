@@ -1,43 +1,24 @@
 # $banID[]
-Bans a user using their ID.
+Bane o usuário usando seu ID.
 
-## Syntax
+## Sintaxe
 ```
-$banID[Reason;(User ID)]
+$banID[Motivo;(ID do Usuário)]
 ```
 
-### Parameters
-- `Reason` `(Type: String || Flag: Emptiable)`: The reason for the ban, which will be saved in the audit-log.
-   > Use [`$getBanReason[]`](./getBanReason.md) to get the ban reason.
-- `User ID` `(Type: Snowflake || Flag: Vacantable)`: The user to ban. If empty, the ID will be taken from the last part of the author's message.
-
-## Example
+### Parâmetros
+- `Motivo` `(Tipo: String || Indicação: Esvaziável)`: O motivo para o banimento, que vai ser salvo no registro de auditoria.
+   > Use [`$getBanReason[]`](./getBanReason.md) para pegar o motivo do banimento.
+- `ID do Usuário` `(Tipo: Snowflake || Indicação: Vagável)`: O usuário para banir. Se vazio, o ID irá ser pego da última parte da mensagem do autor
+## Exemplo
 ```
 $nomention
-$onlyAdmin[You need the `admim` permission to use that command!]
-$argsCheck[>1;Please provide a `user`. Syntax: `!ban (user) <reason>`]
-$onlyIf[$findUser[$message[1];no]!=;Failed to find user!]
-<@$findUser[$message;no]> was banned!
+$onlyAdmin[Você precisa da permissão `admin` para usar esse comando!]
+$argsCheck[>1;Por favor forneça um `usuário`. Sintaxe: `!banir (usuário) <motivo>`]
+$onlyIf[$findUser[$message[1];no]!=;Falha ao encontrar o usuário!]
+<@$findUser[$message[1];no]> foi banido!
 $banID[$replaceText[$message;$message[1];;1];$findUser[$message[1];no]]
 ```
+![Screenshot_20231210-183547~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/191462de-3a15-419f-b34e-2d1aaaa9edc4)
+![Screenshot_20231210-183611~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/a23f7182-0af1-462a-ae25-f42acbdfd38e)
 
-``` discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
-  color: "#E67E22"
-  content: |
-    !example 854665455527526421 Hello!
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    <@Chilli> was banned!
-- content: |
-      <font color="white">Chilli</font> left without pizza.
-  type: leave
-```
-
-> [How `$findUser[]` works?](./findUser.md)
