@@ -13,21 +13,5 @@ $ban
 <@$mentioned[1]> foi banido!
 ```
 
-```discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
-  color: "#E67E22"
-  content: |
-    !example <@Spen>
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-      <@Spen> was banned!
-- content: |
-      <font color="white">Spen</font> left without pizza.
-  type: leave
-```
+![Screenshot_20231210-180217~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/c68cd7f9-922a-47bc-9f26-dc8c72fe10c5)
+![Screenshot_20231210-180312~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/daf75473-f7f0-4c53-80ab-939f4c8c39e5)
