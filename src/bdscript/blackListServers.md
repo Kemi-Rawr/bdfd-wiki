@@ -19,5 +19,5 @@ $blackListServers[1096663249346371656;❌ Este comando não pode ser usado aqui!
 **Olá $username!**
 *ID da Guilda: $guildID*
 ```
-![example](https://user-images.githubusercontent.com/113303649/211995843-0d9eba33-e36a-484f-ad97-eb6e67391af1.png)\
-![example](https://user-images.githubusercontent.com/113303649/211996168-47ba94ff-e03d-40f9-8b33-5758454f5ce9.png)
+![Screenshot_20231210-191955~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/748d6b7d-99b3-4fcb-8166-301bcfe83bfd)
+![Screenshot_20231210-192019~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/409898ac-cb77-4aa7-be18-34b60c8ba312)
