@@ -26,6 +26,6 @@ $botLeave
 > ✅ Correto:
 > ```
 > $nomention
-> $sendMessage[Eu saí deste servidor!]
+> $sendMessage[Eu sai deste servidor!]
 > $botLeave
 > ```
