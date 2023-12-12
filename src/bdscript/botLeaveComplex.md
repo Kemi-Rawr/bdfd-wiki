@@ -17,18 +17,18 @@ $botLeave[$message]
 ```
 ![Screenshot_20231212-033942~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/d3d90acc-c7fd-4488-95d4-7fba9e416864)
 
-> If you are using **BDScript 2**, put `$botLeave[]` at the very bottom of the code so that the code works correctly i.e:
+> Se você está usando **BDScript 2**, coloque `$botLeave` lá no fundo do código para que o código funcione corretamente. Por exemplo:
 > 
-> ❌ Not correct:
+> ❌ Incorreto:
 > ```
-> $botLeave[$message]
+> $botLeave
 > $nomention
-> $sendMessage[I left this server!]
+> $sendMessage[Eu sai deste servidor!]
 > ```
->
-> ✅ Correct:
+> 
+> ✅ Correto:
 > ```
 > $nomention
-> $sendMessage[I left this server!]
-> $botLeave[$message]
+> $sendMessage[Eu sai deste servidor!]
+> $botLeave
 > ```
