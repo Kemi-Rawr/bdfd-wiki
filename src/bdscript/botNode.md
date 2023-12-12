@@ -1,28 +1,16 @@
 # $botNode
-Returns the bot's node ID.
+Retorna o ID da node do bot.
 
-## Syntax
+## Sintaxe
 ```
 $botNode
 ```
-> See list of Nodes and Status, [Click here](https://botdesignerdiscord.com/status).
+> Ver lista de Nodes e Status, [Clique aqui](https://botdesignerdiscord.com/status).
 
-## Example
+## Exemplo
 ```
 $nomention
-The bot's node ID: $botNode
+O ID da node do bot: $botNode
 ```
+![Screenshot_20231212-040258~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/26424e06-0966-4099-93ae-4ad654e8a1bc)
 
-```discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  color: "#E67E22"
-  content: |
-    !example
-
-- username: BDFD Support
-  color: "#b9a0e0"
-  bot: true
-  content: |
-    The bot's node ID: 21
-```
