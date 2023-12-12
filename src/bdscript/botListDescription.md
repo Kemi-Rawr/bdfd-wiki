@@ -15,20 +15,6 @@ Pong!
 $botListDescription[Ping? Pong!]
 ```
 
-``` discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
-  color: "#E67E22"
-  content: |
-    !example
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    Pong!
-```
-\
+![Screenshot_20231212-035114~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/74c1773f-ab0f-4bd0-bcab-154bd322b964)
+
 ![example](https://user-images.githubusercontent.com/113303649/210341495-bbda340a-3f30-4c6d-af7c-4445233ede37.png)
