@@ -1,35 +1,36 @@
 # $botListHide
-Hides this command from being shown on the BDL command list (if the bot is on [**Bot Designer List**](https://botdesignerlist.com)).
+Esconde este comando de aparecer na lista de comandos DBL (Se o bot estiver em [**Bot Designer List**](https://botdesignerlist.com)).
 
-## Syntax
+## Sintaxe
 ```
 $botListHide
 ```
-> This function does not hide the command for [`$botCommands[]`](./botCommands.md).
+> Esta função não esconde o comando de [`$botCommands[]`](./botCommands.md).
 
-## Example
-1. Create two commands and set the trigger `!ping` for one command and `!secret` for the other.
-2. Add the `$botListHide` function to the command code with the `!secret` trigger.
+## Exemplo
+1. Crie dois comandos e sete o gatilho `!ping` para um comando e `!secret` para o outro.
+2. Adicione a função `$botListHide` no código do comando com o gatilho `!secret`.
 
-   Code with trigger `!secret`:
+   Código com o gatilho `!secret`:
    ```
    $nomention
-   This is a secret command! 🤫
+   Este é um comando secreto! 🤫
    $botListHide
    ```
 
-   Code with trigger `!ping`:
+   Código com o gatilho `!ping`:
    ```
    $nomention
    Pong!
    $botListDescription[Ping? Pong!]
    ```
-3. Execute commands
+3. Execute os comandos
 
-   ![example](https://user-images.githubusercontent.com/113303649/210347402-7b36f8f4-fc8f-4804-9310-1ed2de0392dc.png)
+   ![Screenshot_20231212-035858~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/cf8e9d9c-5ebb-4547-98d4-0acf28aa2610)
 
-   - With `$botListHide`\
+
+   - Com `$botListHide`\
      ![example](https://user-images.githubusercontent.com/113303649/210349185-677b00f3-df10-4443-a9b5-25ec9c2c2e29.png)
 
-   - Without `$botListHide`\
+   - Sem `$botListHide`\
      ![example](https://user-images.githubusercontent.com/113303649/210350126-b99c73bd-e684-4f5e-a01c-f32c40c54c20.png)
