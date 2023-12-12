@@ -1,31 +1,31 @@
 # $botLeave
-Forces the bot to leave the current server.
+Força o bot a sair do servidor atual.
 
-## Syntax
+## Sintaxe
 ```
 $botLeave
 ```
 
-## Example
+## Exemplo
 ```
 $nomention
-$sendMessage[I left this server!]
+$sendMessage[Tchau, pessoal!]
 $botLeave
 ```
-![example](https://user-images.githubusercontent.com/113303649/210329580-8237da8e-762c-422f-9408-f0e734a21657.png)
+![Screenshot_20231212-032545~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/7d89ca6f-c378-4322-9b22-e5e19c95f4c3)
 
-> If you are using **BDScript 2**, put `$botLeave` at the very bottom of the code so that the code works correctly i.e:
+> Se você está usando **BDScript 2**, coloque `$botLeave` lá no fundo do código para que o código funcione corretamente. Por exemplo:
 > 
-> ❌ Not correct:
+> ❌ Incorreto:
 > ```
 > $botLeave
 > $nomention
-> $sendMessage[I left this server!]
+> $sendMessage[Eu sai deste servidor!]
 > ```
 > 
-> ✅ Correct:
+> ✅ Correto:
 > ```
 > $nomention
-> $sendMessage[I left this server!]
+> $sendMessage[Eu saí deste servidor!]
 > $botLeave
 > ```
