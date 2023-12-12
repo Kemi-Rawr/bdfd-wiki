@@ -1,15 +1,14 @@
 # $botListDescription
-Sets the description of this command, for the BDL command list (if the bot is on [**Bot Designer List**](https://botdesignerlist.com)).
+Seta a descrição deste comando, para a lista de comandos BDL (se o bot estiver em [**Bot Designer List**](https://botdesignerlist.com)).
 
-## Syntax
+## Sintaxe
 ```
-$botListDescription[Text]
+$botListDescription[Texto]
 ```
 
-### Parameters
-- `Text` `(Type: String || Flag: Required)`: The text that the description will be set to.
-
-## Example
+### Parâmetros 
+- `Texto` `(Tipo: String || Indicação: Obrigatório)`: O texto que a descrição irá ser setada.
+## Exemplo
 ```
 $nomention
 Pong!
