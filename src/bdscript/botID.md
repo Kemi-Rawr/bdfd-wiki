@@ -1,29 +1,15 @@
 # $botID
-Returns the bot's ID.
+Retorna o ID do Bot
 
-## Syntax
+## Sintaxe
 ```
 $botID
 ```
 
-## Example
+## Exemplo
 ```
 $nomention
-My ID is: $botID
+Olá! Meu ID é: `$botID`
 ```
+![Screenshot_20231212-032150~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/07d249fe-5310-40c5-a6cb-abbd2b066a8f)
 
-```discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
-  color: "#E67E22"
-  content: |
-    !example
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    My ID: 1009018156494368798
-```
