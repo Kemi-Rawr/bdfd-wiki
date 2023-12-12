@@ -1,36 +1,21 @@
 # $botLeave[]
-Forces the bot to leave the server matching the provided [server ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID).
+Força o bot a sair do servidor que corresponde ao [ID do servidor](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID) fornecido.
 
-## Syntax
+## Sintaxe
 ```
-$botLeave[Guild ID]
+$botLeave[ID da Guilda]
 ````
 
-### Parameters
-- `Guild ID` `(Type: Snowflake || Flag: Required)`: The ID of the guild to leave.
+### Parâmetros 
+- `ID da Guilda` `(Tipo: Snowflake || Indicação: Obrigatório)`: O ID da guilda para sair.
 
-## Example
+## Exemplo
 ```
 $nomention
-$sendMessage[I left out `$serverName[$message]` server.]
+$sendMessage[Eu sai do servidor: `$serverName[$message]`.]
 $botLeave[$message]
 ```
-
-```discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  color: "#E67E22"
-  content: |
-    !example 1009018156494368798
-
-- username: BDFD Support
-  color: "#b9a0e0"
-  bot: true
-  content: |
-    I left out <discord-inline-code>BDFD Support</discord-inline-code> server.
-```
-\
-![example](https://user-images.githubusercontent.com/113303649/210337078-dbdb0539-6f4a-4271-8574-afc43551d0e8.png)
+![Screenshot_20231212-033942~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/d3d90acc-c7fd-4488-95d4-7fba9e416864)
 
 > If you are using **BDScript 2**, put `$botLeave[]` at the very bottom of the code so that the code works correctly i.e:
 > 
