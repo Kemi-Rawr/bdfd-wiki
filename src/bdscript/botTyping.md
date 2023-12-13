@@ -1,36 +1,22 @@
 # $botTyping
-This function tells Discord that the bot is typing.
+Esta função diz ao Discord que o bot está digitando.
 
-## Syntax
+## Sintaxe
 ```
 $botTyping
 ```
 
-## Example
+## Exemplo
 ```
 $nomention
 $botTyping
-Hello $username!
+Olá $username!
 ```
 
-- Command started:
+- Início do comando:
+![screen-20231213-015347_exported_3453~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/386d60f4-2853-4c05-98f2-657cd7599a44)
 
-![example](https://user-images.githubusercontent.com/113303649/210356430-f642b91c-f742-457d-a5ce-b446f18b03ca.png)
 
-- Command completed:
+- Comando completado:
+![Screenshot_20231213-015743~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/61d1d91c-265f-44ce-8c94-a70b23d32274)
 
-``` discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d
-  color: "#E67E22"
-  content: |
-    !example
-- username: BDFD Support
-  avatar: https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61
-  color: "#378afa"
-  bot: true
-  verified: true
-  content: |
-    Hello RainbowKey!
-```
