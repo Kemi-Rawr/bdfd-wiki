@@ -1,31 +1,17 @@
 # $categoryCount[]
-Returns the category count of the provided guild.
+Retorna a contagem de categorias na guilds fornecida.
 
-## Syntax
+## Sintaxe
 ```
-$categoryCount[Guild ID]
+$categoryCount[ID da Guilda]
 ```
 
-### Parameters
-- `Guild ID` `(Type: Snowflake || Flag: Required)`: The guild to get its category count.
+### Parâmetros 
+- `ID da Guilda` `(Tipo: Snowflake || Indicação: Obrigatório)`: A guilda para obter sua contagem de categorias.
 
-## Example
+## Exemplo
 ```
 $nomention
-There are $categoryCount[$message[1]] categories in the server!
+Tem $categoryCount[$message[1]] categorias neste servidor!
 ```
-``` discord yaml
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    !categories 790676954247725106
-
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  content: |
-    There are 5 categories in the server!
-```
+![Screenshot_20231213-151040~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/f87df65f-2611-4769-b3e3-d2de42b34c9f)
