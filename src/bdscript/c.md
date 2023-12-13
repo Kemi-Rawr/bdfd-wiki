@@ -1,32 +1,17 @@
 # $c
-Adds a comment to the code. Comments do not appear in the bot's response.
+Adiciona um comentário no código. Comentários não aparecem na resposta do bot.
 
-## Syntax
+## Sintaxe
 ```
-$c[Comment]
+$c[Comentário]
 ```
 
-### Parameters 
-- `Comment` `(Type: String || Flag: Emptiable)`: Any text. This text will not be taken into account during processing. Commonly used to add notes to the code.
-
-## Example
+### Parâmetros 
+- `Comentário` `(Tipo: String || Indicação: Esvaziável)`: Qualquer texto. Esse texto não vai ser levado em conta durante o processamento. Normalmente usado para adicionar anotações no código.
+## Exemplo
 ```
 $nomention
 $noMentionMessage
-$c[This is a say command. You are reading a comment!]
+$c[Este é um comando de falar! Você está lendo um comentário!]
 ```
-``` discord yaml
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    !say As you can see, the comment doesn't appear! Pretty cool; right?
-
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  content: |
-    As you can see, the comment doesn't appear! Pretty cool; right?
-```
+![Screenshot_20231213-020620~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/9791ff45-f328-4e7c-9593-541fd922a522)
