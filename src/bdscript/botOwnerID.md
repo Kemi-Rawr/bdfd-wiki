@@ -1,6 +1,5 @@
 # $botOwnerID
-Returns the bot owner's ID.
-
+Retorna o ID do dono do bot
 ## Syntax
 ```
 $botOwnerID
@@ -9,21 +8,6 @@ $botOwnerID
 ## Example
 ```
 $nomention
-My owner's ID: $botOwnerID
+O ID do meu dono: $botOwnerID
 ```
-
-``` discord yaml
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    !botOwnerID
-
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  content: |
-    My owner's ID: 729343563401265193
-```
+![Screenshot_20231213-015010~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/5296a862-1f32-461f-9261-e51d93c29b90)
