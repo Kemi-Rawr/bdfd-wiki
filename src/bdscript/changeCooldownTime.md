@@ -1,59 +1,32 @@
 # $changeCooldownTime
-Changes the cooldown metrics. These can be used in cooldown error messages. It can be useful for translations.
+Muda as métricas do cooldown. Essas podem ser usadas nas mensagens de erro do cooldown. Isso pode ser útil para traduções.
 
-## Syntax
+## Sintaxe
 ```
-$changeCooldownTime[Days;Hours;Minutes;Seconds]
+$changeCooldownTime[Dias;Horas;Minutos;Segundos]
 ```
 
-### Parameters
-- `Days` `(Type: String || Flag: Required)`: The text to replace 'Days' with.
-- `Hours` `(Type: String || Flag: Required)`: The text to replace 'Hours' with.
-- `Minutes` `(Type: String || Flag: Required)`: The text to replace 'Minutes' with.
-- `Seconds` `(Type: String || Flag: Required)`: The text to replace 'Seconds' with.
+### Parâmetros
+- `Dias` `(Tipo: String || Indicação: Obrigatório)`: O texto para substituir 'Dias'.
+- `Hours` `(Tipo: String || Indicação: Obrigatório)`: O texto para substituir 'Horas'.
+- `Minutes` `(Tipo: String || Indicação: Obrigatório)`: O texto para substituir 'Minutos'.
+- `Seconds` `(Tipo: String || Indicação: Obrigatório)`: O texto para substituir 'Segundos'.
 
- ### Sub-functions
+ ### Sub-funções
  
- Name        | Type
+ Nome        | Tipo
 ------------|---------
-`%time-d%`  | Day
-`%time-h%`  | Hour
-`%time-m%`  | Minute
-`%time-s%`  | Second
+`%time-d%`  | Dia
+`%time-h%`  | Hora
+`%time-m%`  | Minuto
+`%time-s%`  | Segundo
 
-## Example
+## Exemplo
 ```
 $nomention
-Hello $displayName!
-$changeCooldownTime[Days⏰;Hours⏰;Mins🕧;Secs🕧]
-$cooldown[10m;Please wait %time-m%!]
+Olá $displayName!
+$changeCooldownTime[dia(s);hora(s);minuto(s);segundo(s)]
+$cooldown[10m;Por favor espere %time-m% minutos e %time-s% segundos!]
 ```
-``` discord yaml
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    !hello
+![Screenshot_20231213-153328~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/833b260a-8e6e-4d15-a2d8-62ca67cf2118)
 
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  content: |
-    Hello Nicky!
-
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    !hello
-
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  content: |
-    Please wait 9.9 Mins🕧!
-```
