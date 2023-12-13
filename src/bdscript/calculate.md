@@ -1,42 +1,29 @@
 # $calculate
-Calculates a math expression.
+Calcula uma expressão matemática.
 
-## Syntax
+## Sintaxe
 ```
-$calculate[Expression]
+$calculate[Expressão]
 ```
 
-### Parameters
-- `Expression` `(Type: String || Flag: Required)`: The math expression to solve.
+### Parâmetros
+- `Expressão` `(Tipo: String ||Indicação: Obrigatório)`: A expressão matemática para resolver.
 
-### Signs
-- `+` - Addition.
-- `-` - Subtraction.
-- `/` - Division.
-- `*` - Multiplication.
-- `%` - Modulo.
-- `**` - Power.
-- `()` - Parentheses you can put equations in.
+### Símbolos
+- `+` - Adição.
+- `-` - Subtração.
+- `/` - Divisão.
+- `*` - Multiplicação.
+- `%` - Módulo.
+- `**` - Elevação.
+- `()` - Parênteses onde você pode colocar equações.
 
-## Example
+## Exemplo
 ```
 $nomention
 $enableDecimals[yes]
 $calculate[$message] 🧠
 ```
+![Screenshot_20231213-021815~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/1b6aff55-4522-47f2-96c9-f15e1715dc5f)
 
-```discord yaml
-- user_id: 803569638084313098
-  username: RainbowKey
-  color: "#E67E22"
-  content: |
-    !example 10+5.9-9
-
-- username: BDFD Support
-  color: "#b9a0e0"
-  bot: true
-  content: |
-    6.9 🧠
-```
-
-> [How `$enableDecimals[]` works?](./bdscript/enableDecimals.md)
+> [Como `$enableDecimals[]` funciona?](./bdscript/enableDecimals.md)
