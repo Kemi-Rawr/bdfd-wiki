@@ -1,48 +1,28 @@
 # $categoryChannels
-Lists all channels of the given category.
+Lista todos os canais da categoria dada.
 
-## Syntax
+## Sintaxe
 ```
-$categoryChannels[Category ID;Separator;(Option)]
+$categoryChannels[ID da Categoria;Separador;(Opção)]
 ```
 
-### Parameters
-- `Category ID` `(Type: Snowflake || Flag: Required)`: The category from which to list the channels. 
-- `Seperator` `(Type: String || Flag: Emptiable)`: The separator to use when separating channel properties.
-- `Option` `(Type: Enum || Flag: Optional)`: Which property to get from category channels. Default  is `name`. See [below](#options) for more information.
+### Parâmetros 
+- `ID da Categoria` `(Tipo: Snowflake || Indicação: Obrigatório)`: A categoria para qual listar os canais. 
+- `Separador` `(Tipo: String || Indicação: Esvaziável)`: O separador para usar enquanto separa as propriedades canais.
+- `Opção` `(Tipo: Enum || Indicação: Opcional)`: Qual propriedade pegar dos canais da categoria. O padrão é `name`. Veja [abaixo](#options) para mais informação.
 
-### Options
-- `name` - The names of the channels.
-- `id` - The IDs of the channels.
-- `mention` - The mentions of the channels.
-- `count` - The amount of channels in the category.
+### Opções 
+- `name` - Os nomes dos canais.
+- `id` - Os IDs dos canais.
+- `mention` - As menções dos canais.
+- `count` - A quantidade de canais na categoria.
 
-> The `count` option does not list anything, instead it will return the number of channels under the given category.
+> A opção `count` não lista nada, ao invés ela vai retornar o número de canais abaixo da categoria dada.
 
-## Example
+## Exemplo
 ```
 $nomention
-<#$categoryChannels[$categoryID[BDFD];>
-<#;id]>
+$categoryChannels[$categoryID[Genérico]; ;mention]
 ```
-``` discord yaml
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    !example
-
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  content: |
-    <#rules>
-    <#news>
-    <#update-logs>
-    <#bots>
-    <#bdfd-forums>
-```
-
-> [How `$categoryID[]` works?](./categoryID.md)
+![Screenshot_20231213-023013~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/6fe802d8-0166-4c48-b84a-7f8d4a06fa7b)
+> [Como `$categoryID[]` functiona?](./categoryID.md)
