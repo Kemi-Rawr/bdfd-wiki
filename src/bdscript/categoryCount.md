@@ -1,27 +1,13 @@
 # $categoryCount
-Returns the category count of the current guild.
+Retorna a contagem de categorias da guilda atual.
 
-## Syntax
+## Sintaxe
 ```
 $categoryCount
 ```
-## Example
+## Exemplo
 ```
 $nomention
-There are $categoryCount categories in this server!
+Tem $categoryCount categorias neste servidor!
 ```
-``` discord yaml
-- user_id: 729343563401265193
-  username: Nicky
-  color: "#EE7908"
-  content: |
-    !categories
-
-- user_id: 566613317972394004
-  username: Wiki Bot
-  color: "#748BD4"
-  bot: true
-  verified: true
-  content: |
-    There are 3 categories in this server!
-```
+![Screenshot_20231213-094751~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/a4e6c9a2-2979-40ec-b07c-f84bdb0986e3)
