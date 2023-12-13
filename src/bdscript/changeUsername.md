@@ -1,13 +1,13 @@
 # $changeUsername
-Changes the mentioned user's nickname.
+Muda o apelido do usuário mencionado.
 
-## Syntax
+## Sintaxe 
 ```
-$changeUsername[New nickname]
+$changeUsername[Novo apelido]
 ```
 
-### Parameters
-- `New nickname` `(Type: String || Flag: Required)`: The text to change the user's nickname to. It cannot exceed more than 32 characters. Using `%username%` will be replaced by the real user's username.
+### Parâmetros
+- `Novo apelido` `(Tipo: String || Indicação: Obrigatório)`: The text to change the user's nickname to. It cannot exceed more than 32 characters. Using `%username%` will be replaced by the real user's username.
 
 ## Example
 ```
