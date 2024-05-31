@@ -9,16 +9,16 @@ $addButton[Nova fila?;ID/URL de Interação;Rótulo;Estilo;(Desabilitar?;Emoji;I
 ### Parâmetros
 - `Nova fila?` `(Tipo: Bool || Indicação: Obrigatória)`: Se setado como `yes`, o botão vai aparecer em uma nova fila. Se setado como `no`, o botão vai aparecer na mesma fila que o botão anterior.
     > Uma mensagem pode ter no máximo 25 botões (5 filas de 5 botões).
-- `ID/URL de Interação/` `(Tipo: String, URL || Indicação: Obrigatório)`: Dependendo do tipo do botão, você pode setar como um `ID de Interação` que é então usada na callback `$onInteraction[ID]` ou `URL` se for um botão de link
+- `ID/URL de Interação` `(Tipo: String, URL || Indicação: Obrigatório)`: Dependendo do tipo do botão, você pode setar como um `ID de Interação` que é então usada na callback `$onInteraction[ID]` ou `URL` se for um botão de link
 - `Rótulo` `(Tipo: String || Indicação: Esvaziável)`: O valor de texto visível no botão.
 - `Estilo` `(Tipo: Enum || Indicação: Obrigatória)`: É usado para especificar a cor de plano de fundo do botão. Se um botão tem um link/URL, você **tem que** setar o valor como `link`. Veja [essa seção](#button-style) para mais detalhes.
 - `Desabilitar?` `(Tipo: Bool || Indicação: Vagável)`: Se setado como `yes`, O botão não pode ser pressionado. Padroniza como `no`.
 - `Emoji` `(Tipo: Emoji || Indicação: Vagável)`: Adiciona um emoji dentro do botão. Emojis devem ser colados como *unicode*, *alias* ou estar no seguinte formato: `<nome emoji:emoji ID>`.
-- `Mensagem ID` `(Tipo: Snowflake || Indicação: Esvaziável)`: Adiciona o botão na mensagem ID fornecida. É importante notar que o autor da mensagem ID fornecida **tem que** ser do bot.
+- `ID de Mensagem` `(Tipo: Snowflake || Indicação: Esvaziável)`: Adiciona o botão na ID de Mensagem fornecida. É importante notar que o autor da ID de Mensagem fornecida **tem que** ser do bot.
 
 > Botões interativos não podem ter `IDs` duplicados na mesma mensagem. Então como exemplo, você não pode ter dois botões com o ID setado como `teste`.
 
-> Se `URL` é usado no argumento `Interação ID/URL`, tem **que começar** com `http://` ou `https://`.
+> Se `URL` é usado no argumento `ID/URL de Interação`, tem **que começar** com `http://` ou `https://`.
 
 ## Estilo do Botão 
 Botões podem ter diferentes estilos _(cor de plano de fundo)_.
