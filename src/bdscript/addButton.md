@@ -21,7 +21,7 @@ $addButton[Nova fila?;ID/URL de Interação;Rótulo;Estilo;(Desabilitar?;Emoji;I
 > Se `URL` é usado no argumento `ID/URL de Interação`, tem **que começar** com `http://` ou `https://`.
 
 ## Estilo do Botão 
-Botões podem ter diferentes estilos _(cor de plano de fundo)_.
+Botões podem ter diferentes estilos _(cores de plano de fundo)_.
 Aqui, estão todos os valores possíveis para o argumento `style`.
 - `primary` - Botão azul
 - `secondary` - Botão cinza 
