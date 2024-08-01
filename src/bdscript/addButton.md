@@ -28,7 +28,8 @@ Aqui, estão todos os valores possíveis para o argumento `style`.
 - `success` - Botão verde
 - `danger` - Botão vermelho
 - `link` - Botão de redirecionamento
-![Screenshot_20230820-162630~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/29119e57-1c58-4dfe-abe8-0dd64949f8c8)
+![Screenshot_20240801-035007~2](https://github.com/user-attachments/assets/d9ab003c-a9cd-4c06-bde9-e1a751c9a71f)
+
 
 > Se o estilo `link` é usado, o botão **não vai** mandar nenhuma interação!
 
@@ -38,6 +39,7 @@ $nomention
 Oi
 $addButton[no;teste;Dizer olá!;primary;no;]
 ```
-![Screenshot_20230820-161458~2](https://github.com/Kemi-Rawr/bdfd-wiki/assets/111205130/e4758728-9412-4afb-83f3-70e83a0e84e6)
+![Screenshot_20240801-034148~2](https://github.com/user-attachments/assets/9852da72-d2dc-4636-9fc2-fc101c9059d4)
+
 
 > Para mais informações, veja a [Guia de Botões](../guides/general/interactions/buttons/aboutButtons.md).
