@@ -12,7 +12,7 @@ $addCmdReactions[Emojis;...]
 > 
 > > Para **sobrenomes de emoji**, certifique-se de botar `:` na frente e no fim do sobrenome.
 > >
-> > Para **IDs de emojis**, o bot deve estar presente no servidor que o emoji tem origem.
+> > Para **IDs de emoji**, o bot deve estar presente no servidor que o emoji tem origem.
 > 
 > Lista de emojis unicode: [😋 Get Emoji](https://getemoji.com) \
 > Lista de sobrenomes de emojis suportados: [Emoji Aliases](https://botdesignerdiscord.com/public/emoji_alias_list)
